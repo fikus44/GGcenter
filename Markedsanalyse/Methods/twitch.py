@@ -34,5 +34,16 @@ def get_access_token():
     return os.environ.get("TWTICH_ACCESS_TOKEN")
 
 
-def validate_auth(access_token):
-    "validate_auth tjekker om access token er valid, ellers får vi en ny i get_access_token"
+def validate_access_token(access_token):
+    "validate_access_token tjekker om access token er valid, ellers får vi en ny i get_access_token"
+
+    validate_url = 'https://id.twitch.tv/oauth2/validate'
+    validate_header = {"Authorization": f"OAuth {access_token}"
+                       }
+    
+    try:
+        validate_response = requests.get(url=validate_url, headers=validate_header)
+        reponse_json = validate_response.json()
+        return True
+    except:
+        return False
