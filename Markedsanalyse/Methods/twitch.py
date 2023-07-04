@@ -71,7 +71,10 @@ def top_games(params = {'first' : 50}):
     games_response = requests.get(url = top_games_url, params = params, headers = get_headers())
     games_response_json = games_response.json()
 
-    return [dict["name"] for dict in games_response_json["data"]], [dict["id"] for dict in games_response_json["data"]]
+    game_name = [game["name"] for game in games_response_json["data"]]
+    game_id = [game["id"] for game in games_response_json["data"]]
+
+    return game_name, game_id
 
 
 def get_streams(params):
@@ -83,7 +86,7 @@ def get_streams(params):
 
 def update_params(stream_response, game_id):
 
-    params = {'game_id' : f'{game_id}', 'first' : 10, 'after' : f'{stream_response["pagination"]["cursor"]}'}
+    params = {'game_id' : f'{game_id}', 'first' : 100, 'after' : f'{stream_response["pagination"]["cursor"]}'}
 
     return params
 
@@ -91,33 +94,50 @@ def update_params(stream_response, game_id):
 def loop_through_pages(params, game_id):
 
     result = []
-    streams = get_streams(params)
-    result.extend(streams["data"])
+    stream_response = get_streams(params)
+    result.extend(stream_response["data"])
 
-    pages = 0
-    while pages < 5:
-        new_params = update_params(streams, game_id)
+    while bool(stream_response["pagination"]): # Dict evaluates to True as long as there is another page 
+        new_params = update_params(stream_response, game_id)
         stream_response = get_streams(new_params)
-        result.extend(stream_response["data"])
-        pages += 1
+        result.extend(stream_response["data"])        
 
     return result
 
 
-def add_viewers(params):
+def viewers_per_game(params, game_id):
 
-    streams = get_streams(params)
-    streams_viewers = [dict["viewer_count"] for dict in streams["data"]]
+    stream_response = loop_through_pages(params, game_id)
+    viewers_per_game = [game["viewer_count"] for game in stream_response]
+
+    top10_lang = ["en", "es", "ko", "fr", "zh", "ru", "de", "it", "pt", "ja"]
+
+    en_viewers_per_game = sum([game["viewer_count"] if game["language"] == 'en' else 0 for game in stream_response])
+    sp_viewers_per_game = sum([game["viewer_count"] if game["language"] == 'es' else 0 for game in stream_response])
+    ko_viewers_per_game = sum([game["viewer_count"] if game["language"] == 'ko' else 0 for game in stream_response])
+    fr_viewers_per_game = sum([game["viewer_count"] if game["language"] == 'fr' else 0 for game in stream_response])
+    ch_viewers_per_game = sum([game["viewer_count"] if game["language"] == 'zh' else 0 for game in stream_response])
+    ru_viewers_per_game = sum([game["viewer_count"] if game["language"] == 'ru' else 0 for game in stream_response])
+    de_viewers_per_game = sum([game["viewer_count"] if game["language"] == 'de' else 0 for game in stream_response])
+    it_viewers_per_game = sum([game["viewer_count"] if game["language"] == 'it' else 0 for game in stream_response])
+    pt_viewers_per_game = sum([game["viewer_count"] if game["language"] == 'pt' else 0 for game in stream_response])
+    ja_viewers_per_game = sum([game["viewer_count"] if game["language"] == 'ja' else 0 for game in stream_response])
+    ot_viewers_per_game = sum([game["viewer_count"] if game["language"] not in top10_lang else 0 for game in stream_response])
+
+    country_viewers_per_game = {"en" : en_viewers_per_game, "sp" : sp_viewers_per_game, "pt" : pt_viewers_per_game, "de" : de_viewers_per_game,
+                                "ru" : ru_viewers_per_game, "fr" : fr_viewers_per_game, "ko" : ko_viewers_per_game, "ja" : ja_viewers_per_game,
+                                "ch" : ch_viewers_per_game, "it" : it_viewers_per_game, "ot" : ot_viewers_per_game}
+
+    return sum(viewers_per_game), country_viewers_per_game
+
+def country_viewers_per_game(params, game_id):
+
+    stream_response = loop_through_pages(params, game_id)
+    country_viewers_per_game = []
+
+    return None 
 
 
-    return streams_viewers
-
-
-
-
-# Jeg får ikke viewer data når jeg trækker fra top_games så skal trække fra stream og så lægge sammen inden for hver kategori. Jeg har trækket vist nok inde i jupyter
-# Jeg ved ikke om jeg bare kan trække samtlige streams på twtich (evt alle streams med mere end et min antal viewers). Ellers kan jeg bruge top games til at få top X antal games
-# og så ud fra kun de games kan jeg få viewers. 
 
 '''
 In Helix, there doesn’t appear to be a way to easily get a games viewer count, currently you would have to page through the streams 
