@@ -1,6 +1,6 @@
 import os
 import requests
-import time
+import json
 
 # Load client ID and secret as environmental variables
 client_id = os.environ.get("TWITCH_CLIENT_ID")
@@ -56,7 +56,7 @@ def validate_access_token(access_token):
 
     validate_url = 'https://id.twitch.tv/oauth2/validate'
     validate_header = {"Authorization": f"OAuth {access_token}"
-                    }
+                       }
     
     try:
         validate_response = requests.get(url=validate_url, headers=validate_header)
@@ -65,54 +65,24 @@ def validate_access_token(access_token):
     except:
         return False
     
+def send_twitch_request(url, body, params, method = "GET", headers = get_headers()):
+    response = requests.request(method = method, url = url, body = body, headers = headers, params = params)
 
-def top_games(params = {'first' : 50}):
+    return response.json()
+    
+def top_games(): # Jeg skal tilføje argumenter til denne, så jeg kan gøre den dynamisk, hvis jeg skal have forskellige træk
 
-    games_response = requests.get(url = top_games_url, params = params, headers = get_headers())
+    games_response = requests.get(url = top_games_url, headers = get_headers())
     games_response_json = games_response.json()
 
-    return [dict["name"] for dict in games_response_json["data"]], [dict["id"] for dict in games_response_json["data"]]
+    return games_response_json
 
-
-def get_streams(params):
-
-    streams_response = requests.get(url = top_streams_url, params = params, headers = get_headers())
+def get_streams():
+    
+    streams_response = requests.get(url = top_streams_url, headers = get_headers())
     streams_response_json = streams_response.json()
 
     return streams_response_json
-
-def update_params(stream_response, game_id):
-
-    params = {'game_id' : f'{game_id}', 'first' : 10, 'after' : f'{stream_response["pagination"]["cursor"]}'}
-
-    return params
-
-
-def loop_through_pages(params, game_id):
-
-    result = []
-    streams = get_streams(params)
-    result.extend(streams["data"])
-
-    pages = 0
-    while pages < 5:
-        new_params = update_params(streams, game_id)
-        stream_response = get_streams(new_params)
-        result.extend(stream_response["data"])
-        pages += 1
-
-    return result
-
-
-def add_viewers(params):
-
-    streams = get_streams(params)
-    streams_viewers = [dict["viewer_count"] for dict in streams["data"]]
-
-
-    return streams_viewers
-
-
 
 
 # Jeg får ikke viewer data når jeg trækker fra top_games så skal trække fra stream og så lægge sammen inden for hver kategori. Jeg har trækket vist nok inde i jupyter
@@ -127,9 +97,3 @@ from each stream object returned.
 et call med top 50 games eller lignende og så for hver af dem et kald med streamers som jeg så lægger sammen. Hvad med trendning games? -- de skal være i top 50 ellers er de ikke
 spændende alligevel, så der kan jeg nok fange dem ved så bare at lave noget databehandling som viser hvis der er nogle spil som lige pludseilg kommer frem 
 '''
-
-
-def send_twitch_request(url, body, params, method = "GET", headers = get_headers()):
-    response = requests.request(method = method, url = url, body = body, headers = headers, params = params)
-
-    return response.json()
