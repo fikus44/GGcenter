@@ -97,7 +97,7 @@ def validate_access_token(access_token):
         return False
     
 
-def top_games(params = {'first' : 50}):
+def top_games(params = {'first' : 70}):
 
     '''
     top_games() returns two lists of the (default) 50 most popular 
@@ -109,7 +109,8 @@ def top_games(params = {'first' : 50}):
     params : Dictionary
         Specified paramters for the get HTTP request.
         Only the first parameter (# of hits per page)
-        is required. 
+        is required. I set it to 70 to still have 50
+        games after filtering out non-games.
     
     '''
 
@@ -117,14 +118,33 @@ def top_games(params = {'first' : 50}):
     games_response = requests.get(url = top_games_url, params = params, headers = get_headers())
     games_response_json = games_response.json()
 
-    # Lists of name of games and IDs
+    # Lists of name and ID of games 
     game_name = [game["name"] for game in games_response_json["data"]]
     game_id = [game["id"] for game in games_response_json["data"]]
 
-    return game_name, game_id
+    # Use the line below to get a list of game name and ID to filter out non-games
+    # Make sure to return it in the bottom of the function
+    # games = [(game["name"], game["id"]) for game in games_response_json["data"]]
+
+    # Non-games to drop
+    non_games_name = ["Just Chatting", "Sports", "Casino Slot Machine", "Talk Shows & Podcasts",
+                      "Travel & Outdoors", "Music", "Art", "Slots", "ASMR", "Magic: The Gathering", 
+                      "Chess", "Virtual Casino", "Poker", "Retro", "Politics", "I'm Only Sleeping",
+                      "Crypto", "Software and Game Development", "Pools, Hot Tubs, and Beaches"]
+    non_games_id = ["509658", "518203", "1767487238", "417752", "509672", "26936", "509660", "498566", 
+                    "509659", "2748", "743", "29452", "488190", "27284", "515214", "498592", "499634",
+                    "1469308723", "116747788"]
+
+    for name, id in zip(non_games_name, non_games_id):
+        if name in game_name:
+            game_name.remove(name)
+            game_id.remove(id)
+
+    # Return 50 most popular games 
+    return game_name[:50], game_id[:50]
 
 
-def get_streams(params):
+def get_streams(params = {'first' : 100}):
 
     '''
     get_streams() returns a dictionary of one page of
@@ -292,21 +312,28 @@ def viewers_per_game(params, game_id):
 
     return sum(viewers_per_game), country_viewers_per_game
 
- 
+
+def loop_through_games():
+
+    '''
+    loop_through_games() returns two dictionaries. The 
+    first dictionary encloses the viewer number of the first
+    X most popular games as specified by top_games() method.
+    The second dictionary partitions the total number of 
+    viewers by language. 
+
+    '''
+
+    game_name, game_id = top_games(params = {"first" : 50})
+    viewers = dict.fromkeys(game_name)
+    country_viewers = dict.fromkeys(game_name)
+
+    for name, id in zip(game_name, game_id):
+
+        viewers_temp, country_viewers_temp = viewers_per_game(params = {'game_id' : f'{id}', 'first' : 100}, game_id = id)
+        viewers[name] = viewers_temp
+        country_viewers[name] = country_viewers_temp
 
 
+    return viewers, country_viewers
 
-'''
-In Helix, there doesn’t appear to be a way to easily get a games viewer count, currently you would have to page through the streams 
-endpoint https://dev.twitch.tv/docs/api/reference/#get-streams 262 using the game_id param to limit it to that specific game, and sum the viewer count 
-from each stream object returned.
-
-et call med top 50 games eller lignende og så for hver af dem et kald med streamers som jeg så lægger sammen. Hvad med trendning games? -- de skal være i top 50 ellers er de ikke
-spændende alligevel, så der kan jeg nok fange dem ved så bare at lave noget databehandling som viser hvis der er nogle spil som lige pludseilg kommer frem 
-'''
-
-
-def send_twitch_request(url, body, params, method = "GET", headers = get_headers()):
-    response = requests.request(method = method, url = url, body = body, headers = headers, params = params)
-
-    return response.json()
