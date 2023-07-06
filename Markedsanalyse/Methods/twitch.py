@@ -97,7 +97,7 @@ def validate_access_token(access_token):
         return False
     
 
-def top_games(params = {'first' : 70}):
+def top_games(params = {'first' : 75}):
 
     '''
     top_games() returns two lists of the (default) 50 most popular 
@@ -130,10 +130,11 @@ def top_games(params = {'first' : 70}):
     non_games_name = ["Just Chatting", "Sports", "Casino Slot Machine", "Talk Shows & Podcasts",
                       "Travel & Outdoors", "Music", "Art", "Slots", "ASMR", "Magic: The Gathering", 
                       "Chess", "Virtual Casino", "Poker", "Retro", "Politics", "I'm Only Sleeping",
-                      "Crypto", "Software and Game Development", "Pools, Hot Tubs, and Beaches"]
+                      "Crypto", "Software and Game Development", "Pools, Hot Tubs, and Beaches",
+                      "Board Games", "Dating Simulator"]
     non_games_id = ["509658", "518203", "1767487238", "417752", "509672", "26936", "509660", "498566", 
                     "509659", "2748", "743", "29452", "488190", "27284", "515214", "498592", "499634",
-                    "1469308723", "116747788"]
+                    "1469308723", "116747788", "490413", "203542608"]
 
     for name, id in zip(non_games_name, non_games_id):
         if name in game_name:
@@ -324,7 +325,7 @@ def loop_through_games():
 
     '''
 
-    game_name, game_id = top_games(params = {"first" : 50})
+    game_name, game_id = top_games()
     viewers = dict.fromkeys(game_name)
     country_viewers = dict.fromkeys(game_name)
 
@@ -337,3 +338,5 @@ def loop_through_games():
 
     return viewers, country_viewers
 
+
+# Hvad er steps herfra? Jeg skal have det flyttet ned i en CSV fil, som jeg så kan lave figurer og tabeller pba. Desuden skal jeg have automatiseret scriptet. 
