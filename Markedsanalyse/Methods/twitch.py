@@ -326,7 +326,7 @@ def loop_through_games():
 
     '''
 
-    game_name, game_id = top_games(params = {"first" : 5}) # params = {"first" : 10}
+    game_name, game_id = top_games() # params = {"first" : 10}
     viewers = dict.fromkeys(game_name)
     country_viewers = dict.fromkeys(game_name)
 
