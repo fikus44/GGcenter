@@ -1,5 +1,6 @@
 import os
 import requests
+import datetime
 
 '''
 Twitch.py encloses all methods to extract data from
@@ -97,7 +98,7 @@ def validate_access_token(access_token):
         return False
     
 
-def top_games(params = {'first' : 75}):
+def top_games(params = {'first' : 100}):
 
     '''
     top_games() returns two lists of the (default) 50 most popular 
@@ -124,7 +125,7 @@ def top_games(params = {'first' : 75}):
 
     # Use the line below to get a list of game name and ID to filter out non-games
     # Make sure to return it in the bottom of the function
-    # games = [(game["name"], game["id"]) for game in games_response_json["data"]]
+    #games = [(game["name"], game["id"]) for game in games_response_json["data"]]
 
     # Non-games to drop
     non_games_name = ["Just Chatting", "Sports", "Casino Slot Machine", "Talk Shows & Podcasts",
@@ -325,7 +326,7 @@ def loop_through_games():
 
     '''
 
-    game_name, game_id = top_games()
+    game_name, game_id = top_games(params = {"first" : 5}) # params = {"first" : 10}
     viewers = dict.fromkeys(game_name)
     country_viewers = dict.fromkeys(game_name)
 
@@ -335,8 +336,8 @@ def loop_through_games():
         viewers[name] = viewers_temp
         country_viewers[name] = country_viewers_temp
 
+    # Timestamp of data
+    dt_long = datetime.datetime.now()
+    dt = datetime.datetime(dt_long.year,dt_long.month,dt_long.day,dt_long.hour)
 
-    return viewers, country_viewers
-
-
-# Hvad er steps herfra? Jeg skal have det flyttet ned i en CSV fil, som jeg så kan lave figurer og tabeller pba. Desuden skal jeg have automatiseret scriptet. 
+    return dt, viewers, country_viewers
