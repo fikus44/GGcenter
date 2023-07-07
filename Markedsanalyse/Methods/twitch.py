@@ -125,17 +125,20 @@ def top_games(params = {'first' : 100}):
 
     # Use the line below to get a list of game name and ID to filter out non-games
     # Make sure to return it in the bottom of the function
-    #games = [(game["name"], game["id"]) for game in games_response_json["data"]]
+    # games = [(game["name"], game["id"]) for game in games_response_json["data"]]
 
     # Non-games to drop
     non_games_name = ["Just Chatting", "Sports", "Casino Slot Machine", "Talk Shows & Podcasts",
                       "Travel & Outdoors", "Music", "Art", "Slots", "ASMR", "Magic: The Gathering", 
                       "Chess", "Virtual Casino", "Poker", "Retro", "Politics", "I'm Only Sleeping",
                       "Crypto", "Software and Game Development", "Pools, Hot Tubs, and Beaches",
-                      "Board Games", "Dating Simulator"]
+                      "Board Games", "Dating Simulator", "Games + Demos", "VRChat", "PowerWash Simulator",
+                      "Marbles on Stream", "Dungeons & Dragons", "Animals, Aquariums, and Zoos", "UNO",
+                      "Special Events"]
     non_games_id = ["509658", "518203", "1767487238", "417752", "509672", "26936", "509660", "498566", 
                     "509659", "2748", "743", "29452", "488190", "27284", "515214", "498592", "499634",
-                    "1469308723", "116747788", "490413", "203542608"]
+                    "1469308723", "116747788", "490413", "203542608", "66082", "499003",
+                    "519103", "509511", "509577", "272263131", "11103", "509663"]
 
     for name, id in zip(non_games_name, non_games_id):
         if name in game_name:
