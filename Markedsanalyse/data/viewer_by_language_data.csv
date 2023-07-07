@@ -1,661 +1,760 @@
-game,language,2023-07-07 14:00:00,2023-07-07 19:00:00
-Dota 2,en,47498.0,24469.0
-Dota 2,sp,1593.0,211.0
-Dota 2,pt,2241.0,1943.0
-Dota 2,de,109.0,83.0
-Dota 2,ru,101123.0,24428.0
-Dota 2,fr,382.0,2.0
-Dota 2,ko,151.0,21.0
-Dota 2,ja,104.0,21.0
-Dota 2,ch,7.0,2.0
-Dota 2,it,1.0,13.0
-Dota 2,ot,10193.0,3677.0
-League of Legends,en,55216.0,28798.0
-League of Legends,sp,6237.0,15420.0
-League of Legends,pt,10596.0,16169.0
-League of Legends,de,9080.0,21453.0
-League of Legends,ru,2362.0,3885.0
-League of Legends,fr,10487.0,6902.0
-League of Legends,ko,20897.0,25324.0
-League of Legends,ja,3716.0,1746.0
-League of Legends,ch,15624.0,4027.0
-League of Legends,it,1496.0,2489.0
-League of Legends,ot,10791.0,17724.0
-VALORANT,en,31810.0,36466.0
-VALORANT,sp,3418.0,8723.0
-VALORANT,pt,5220.0,11801.0
-VALORANT,de,6141.0,9636.0
-VALORANT,ru,7912.0,7917.0
-VALORANT,fr,6387.0,13634.0
-VALORANT,ko,13619.0,19674.0
-VALORANT,ja,55661.0,51115.0
-VALORANT,ch,4756.0,4458.0
-VALORANT,it,1081.0,716.0
-VALORANT,ot,9639.0,12210.0
-Street Fighter 6,en,7153.0,4892.0
-Street Fighter 6,sp,580.0,351.0
-Street Fighter 6,pt,68.0,418.0
-Street Fighter 6,de,1598.0,24.0
-Street Fighter 6,ru,126.0,19.0
-Street Fighter 6,fr,2773.0,262.0
-Street Fighter 6,ko,632.0,211.0
-Street Fighter 6,ja,69614.0,6843.0
-Street Fighter 6,ch,3620.0,4849.0
-Street Fighter 6,it,5.0,99.0
-Street Fighter 6,ot,191.0,91.0
-Grand Theft Auto V,en,15914.0,29163.0
-Grand Theft Auto V,sp,422.0,2563.0
-Grand Theft Auto V,pt,1977.0,10939.0
-Grand Theft Auto V,de,5146.0,12889.0
-Grand Theft Auto V,ru,3918.0,6238.0
-Grand Theft Auto V,fr,2182.0,5080.0
-Grand Theft Auto V,ko,429.0,38.0
-Grand Theft Auto V,ja,2616.0,3088.0
-Grand Theft Auto V,ch,4164.0,7180.0
-Grand Theft Auto V,it,1692.0,2543.0
-Grand Theft Auto V,ot,31719.0,36400.0
-Teamfight Tactics,en,23737.0,21292.0
-Teamfight Tactics,sp,3006.0,4951.0
-Teamfight Tactics,pt,3121.0,7320.0
-Teamfight Tactics,de,4333.0,453.0
-Teamfight Tactics,ru,449.0,248.0
-Teamfight Tactics,fr,629.0,5563.0
-Teamfight Tactics,ko,7567.0,10763.0
-Teamfight Tactics,ja,636.0,914.0
-Teamfight Tactics,ch,6872.0,791.0
-Teamfight Tactics,it,144.0,58.0
-Teamfight Tactics,ot,3238.0,3779.0
-Counter-Strike: Global Offensive,en,21769.0,64033.0
-Counter-Strike: Global Offensive,sp,195.0,1328.0
-Counter-Strike: Global Offensive,pt,4205.0,6124.0
-Counter-Strike: Global Offensive,de,753.0,671.0
-Counter-Strike: Global Offensive,ru,16918.0,17643.0
-Counter-Strike: Global Offensive,fr,146.0,750.0
-Counter-Strike: Global Offensive,ko,22.0,29.0
-Counter-Strike: Global Offensive,ja,95.0,52.0
-Counter-Strike: Global Offensive,ch,57.0,201.0
-Counter-Strike: Global Offensive,it,3.0,40.0
-Counter-Strike: Global Offensive,ot,4734.0,4631.0
-Only Up!,en,3248.0,2841.0
-Only Up!,sp,778.0,58974.0
-Only Up!,pt,59.0,971.0
-Only Up!,de,118.0,2656.0
-Only Up!,ru,305.0,496.0
-Only Up!,fr,92.0,258.0
-Only Up!,ko,1252.0,5723.0
-Only Up!,ja,23765.0,4967.0
-Only Up!,ch,3131.0,1784.0
-Only Up!,it,1362.0,3059.0
-Only Up!,ot,1177.0,759.0
-Fortnite,en,13234.0,49453.0
-Fortnite,sp,3177.0,10958.0
-Fortnite,pt,1069.0,2454.0
-Fortnite,de,2244.0,5819.0
-Fortnite,ru,1744.0,2198.0
-Fortnite,fr,2462.0,23860.0
-Fortnite,ko,41.0,4.0
-Fortnite,ja,456.0,292.0
-Fortnite,ch,0.0,4.0
-Fortnite,it,2368.0,4609.0
-Fortnite,ot,1584.0,7521.0
-Apex Legends,en,11451.0,17655.0
-Apex Legends,sp,235.0,596.0
-Apex Legends,pt,17.0,165.0
-Apex Legends,de,925.0,1159.0
-Apex Legends,ru,784.0,1935.0
-Apex Legends,fr,1900.0,2213.0
-Apex Legends,ko,2018.0,277.0
-Apex Legends,ja,4922.0,8574.0
-Apex Legends,ch,3069.0,1877.0
-Apex Legends,it,313.0,243.0
-Apex Legends,ot,664.0,910.0
-Minecraft,en,10154.0,17591.0
-Minecraft,sp,597.0,2538.0
-Minecraft,pt,310.0,823.0
-Minecraft,de,680.0,25005.0
-Minecraft,ru,3318.0,3558.0
-Minecraft,fr,1222.0,1088.0
-Minecraft,ko,5206.0,8359.0
-Minecraft,ja,750.0,1317.0
-Minecraft,ch,746.0,561.0
-Minecraft,it,1318.0,526.0
-Minecraft,ot,942.0,3226.0
-MapleStory,en,487.0,759.0
-MapleStory,sp,2.0,0.0
-MapleStory,pt,8.0,20.0
-MapleStory,de,0.0,4.0
-MapleStory,ru,0.0,0.0
-MapleStory,fr,0.0,0.0
-MapleStory,ko,23756.0,60762.0
-MapleStory,ja,71.0,42.0
-MapleStory,ch,857.0,1110.0
-MapleStory,it,0.0,0.0
-MapleStory,ot,0.0,0.0
-World of Warcraft,en,16714.0,32130.0
-World of Warcraft,sp,288.0,1193.0
-World of Warcraft,pt,250.0,691.0
-World of Warcraft,de,887.0,2319.0
-World of Warcraft,ru,1169.0,2927.0
-World of Warcraft,fr,658.0,762.0
-World of Warcraft,ko,2599.0,1506.0
-World of Warcraft,ja,0.0,2.0
-World of Warcraft,ch,143.0,437.0
-World of Warcraft,it,48.0,26.0
-World of Warcraft,ot,385.0,655.0
-Black Desert,en,4765.0,5380.0
-Black Desert,sp,371.0,1139.0
-Black Desert,pt,713.0,1424.0
-Black Desert,de,1141.0,1852.0
-Black Desert,ru,740.0,852.0
-Black Desert,fr,190.0,171.0
-Black Desert,ko,13501.0,7760.0
-Black Desert,ja,96.0,16.0
-Black Desert,ch,319.0,288.0
-Black Desert,it,0.0,1.0
-Black Desert,ot,421.0,575.0
-Call of Duty: Warzone,en,11406.0,21479.0
-Call of Duty: Warzone,sp,887.0,2454.0
-Call of Duty: Warzone,pt,866.0,1249.0
-Call of Duty: Warzone,de,1958.0,2664.0
-Call of Duty: Warzone,ru,897.0,811.0
-Call of Duty: Warzone,fr,2659.0,2120.0
-Call of Duty: Warzone,ko,50.0,22.0
-Call of Duty: Warzone,ja,24.0,31.0
-Call of Duty: Warzone,ch,51.0,9.0
-Call of Duty: Warzone,it,1260.0,1457.0
-Call of Duty: Warzone,ot,2372.0,2024.0
-Dead by Daylight,en,5654.0,12181.0
-Dead by Daylight,sp,548.0,890.0
-Dead by Daylight,pt,302.0,1900.0
-Dead by Daylight,de,2994.0,4658.0
-Dead by Daylight,ru,1618.0,2306.0
-Dead by Daylight,fr,942.0,555.0
-Dead by Daylight,ko,3126.0,4071.0
-Dead by Daylight,ja,1498.0,1467.0
-Dead by Daylight,ch,2980.0,1033.0
-Dead by Daylight,it,72.0,229.0
-Dead by Daylight,ot,652.0,1049.0
-Diablo IV,en,9432.0,25537.0
-Diablo IV,sp,343.0,359.0
-Diablo IV,pt,315.0,772.0
-Diablo IV,de,2680.0,2357.0
-Diablo IV,ru,703.0,802.0
-Diablo IV,fr,736.0,1940.0
-Diablo IV,ko,1667.0,709.0
-Diablo IV,ja,416.0,561.0
-Diablo IV,ch,1145.0,1029.0
-Diablo IV,it,233.0,313.0
-Diablo IV,ot,2404.0,1239.0
-Genshin Impact,en,4510.0,8674.0
-Genshin Impact,sp,255.0,2000.0
-Genshin Impact,pt,589.0,1219.0
-Genshin Impact,de,345.0,658.0
-Genshin Impact,ru,2307.0,2135.0
-Genshin Impact,fr,803.0,1381.0
-Genshin Impact,ko,1819.0,1237.0
-Genshin Impact,ja,1547.0,1196.0
-Genshin Impact,ch,3962.0,1467.0
-Genshin Impact,it,517.0,1185.0
-Genshin Impact,ot,804.0,1042.0
-FIFA 23,en,4836.0,35157.0
-FIFA 23,sp,1196.0,8638.0
-FIFA 23,pt,1663.0,11870.0
-FIFA 23,de,3854.0,19535.0
-FIFA 23,ru,216.0,908.0
-FIFA 23,fr,3287.0,6491.0
-FIFA 23,ko,77.0,17.0
-FIFA 23,ja,75.0,9.0
-FIFA 23,ch,0.0,1.0
-FIFA 23,it,700.0,2187.0
-FIFA 23,ot,795.0,7627.0
-Escape from Tarkov,en,7917.0,8618.0
-Escape from Tarkov,sp,189.0,280.0
-Escape from Tarkov,pt,492.0,654.0
-Escape from Tarkov,de,1394.0,2066.0
-Escape from Tarkov,ru,3796.0,5478.0
-Escape from Tarkov,fr,299.0,908.0
-Escape from Tarkov,ko,569.0,49.0
-Escape from Tarkov,ja,595.0,1998.0
-Escape from Tarkov,ch,27.0,14.0
-Escape from Tarkov,it,486.0,61.0
-Escape from Tarkov,ot,1084.0,1663.0
-PUBG: BATTLEGROUNDS,en,1719.0,5351.0
-PUBG: BATTLEGROUNDS,sp,27.0,208.0
-PUBG: BATTLEGROUNDS,pt,287.0,716.0
-PUBG: BATTLEGROUNDS,de,523.0,801.0
-PUBG: BATTLEGROUNDS,ru,1215.0,2776.0
-PUBG: BATTLEGROUNDS,fr,670.0,56.0
-PUBG: BATTLEGROUNDS,ko,1452.0,245.0
-PUBG: BATTLEGROUNDS,ja,762.0,34.0
-PUBG: BATTLEGROUNDS,ch,3412.0,120.0
-PUBG: BATTLEGROUNDS,it,2.0,9.0
-PUBG: BATTLEGROUNDS,ot,4932.0,2766.0
-Rust,en,4940.0,5203.0
-Rust,sp,3887.0,9539.0
-Rust,pt,161.0,797.0
-Rust,de,1287.0,646.0
-Rust,ru,436.0,483.0
-Rust,fr,1560.0,1080.0
-Rust,ko,931.0,551.0
-Rust,ja,1478.0,1111.0
-Rust,ch,22.0,16.0
-Rust,it,169.0,151.0
-Rust,ot,819.0,1419.0
-Hearthstone,en,8311.0,9770.0
-Hearthstone,sp,274.0,681.0
-Hearthstone,pt,14.0,29.0
-Hearthstone,de,43.0,85.0
-Hearthstone,ru,5339.0,9904.0
-Hearthstone,fr,1223.0,1695.0
-Hearthstone,ko,450.0,415.0
-Hearthstone,ja,285.0,417.0
-Hearthstone,ch,75.0,477.0
-Hearthstone,it,285.0,14.0
-Hearthstone,ot,295.0,1446.0
-New World,en,9847.0,13612.0
-New World,sp,724.0,1680.0
-New World,pt,1211.0,1743.0
-New World,de,1069.0,1359.0
-New World,ru,536.0,772.0
-New World,fr,850.0,672.0
-New World,ko,1.0,0.0
-New World,ja,14.0,8.0
-New World,ch,0.0,0.0
-New World,it,20.0,0.0
-New World,ot,409.0,529.0
-BattleBit Remastered,en,9974.0,13489.0
-BattleBit Remastered,sp,83.0,209.0
-BattleBit Remastered,pt,649.0,1110.0
-BattleBit Remastered,de,254.0,691.0
-BattleBit Remastered,ru,458.0,155.0
-BattleBit Remastered,fr,76.0,151.0
-BattleBit Remastered,ko,0.0,0.0
-BattleBit Remastered,ja,657.0,337.0
-BattleBit Remastered,ch,38.0,18.0
-BattleBit Remastered,it,22.0,652.0
-BattleBit Remastered,ot,86.0,86.0
-Overwatch 2,en,5772.0,8179.0
-Overwatch 2,sp,311.0,1173.0
-Overwatch 2,pt,94.0,196.0
-Overwatch 2,de,103.0,324.0
-Overwatch 2,ru,1000.0,737.0
-Overwatch 2,fr,963.0,924.0
-Overwatch 2,ko,1847.0,1577.0
-Overwatch 2,ja,874.0,1630.0
-Overwatch 2,ch,125.0,283.0
-Overwatch 2,it,39.0,211.0
-Overwatch 2,ot,1049.0,2350.0
-Sea of Thieves,en,1058.0,4090.0
-Sea of Thieves,sp,21.0,53.0
-Sea of Thieves,pt,94.0,143.0
-Sea of Thieves,de,269.0,294.0
-Sea of Thieves,ru,139.0,101.0
-Sea of Thieves,fr,118.0,244.0
-Sea of Thieves,ko,278.0,16.0
-Sea of Thieves,ja,6.0,7.0
-Sea of Thieves,ch,9376.0,8390.0
-Sea of Thieves,it,10.0,4.0
-Sea of Thieves,ot,60.0,213.0
-Albion Online,en,3613.0,4211.0
-Albion Online,sp,1712.0,1736.0
-Albion Online,pt,823.0,1205.0
-Albion Online,de,26.0,7.0
-Albion Online,ru,682.0,458.0
-Albion Online,fr,189.0,75.0
-Albion Online,ko,193.0,143.0
-Albion Online,ja,442.0,291.0
-Albion Online,ch,1181.0,979.0
-Albion Online,it,0.0,1.0
-Albion Online,ot,240.0,453.0
-The Callisto Protocol,en,9024.0,
-The Callisto Protocol,sp,0.0,
-The Callisto Protocol,pt,1.0,
-The Callisto Protocol,de,0.0,
-The Callisto Protocol,ru,15.0,
-The Callisto Protocol,fr,2.0,
-The Callisto Protocol,ko,4.0,
-The Callisto Protocol,ja,0.0,
-The Callisto Protocol,ch,0.0,
-The Callisto Protocol,it,0.0,
-The Callisto Protocol,ot,0.0,
-Lost Ark,en,1863.0,
-Lost Ark,sp,128.0,
-Lost Ark,pt,301.0,
-Lost Ark,de,124.0,
-Lost Ark,ru,379.0,
-Lost Ark,fr,143.0,
-Lost Ark,ko,5476.0,
-Lost Ark,ja,38.0,
-Lost Ark,ch,45.0,
-Lost Ark,it,1.0,
-Lost Ark,ot,128.0,
-FINAL FANTASY XVI,en,6289.0,2389.0
-FINAL FANTASY XVI,sp,86.0,120.0
-FINAL FANTASY XVI,pt,150.0,438.0
-FINAL FANTASY XVI,de,186.0,742.0
-FINAL FANTASY XVI,ru,199.0,359.0
-FINAL FANTASY XVI,fr,268.0,512.0
-FINAL FANTASY XVI,ko,339.0,411.0
-FINAL FANTASY XVI,ja,388.0,167.0
-FINAL FANTASY XVI,ch,238.0,277.0
-FINAL FANTASY XVI,it,2.0,77.0
-FINAL FANTASY XVI,ot,209.0,2047.0
-Dave the Diver,en,1421.0,7930.0
-Dave the Diver,sp,300.0,207.0
-Dave the Diver,pt,1286.0,58.0
-Dave the Diver,de,169.0,60.0
-Dave the Diver,ru,53.0,45.0
-Dave the Diver,fr,1001.0,158.0
-Dave the Diver,ko,2530.0,1658.0
-Dave the Diver,ja,141.0,63.0
-Dave the Diver,ch,206.0,375.0
-Dave the Diver,it,1.0,1.0
-Dave the Diver,ot,864.0,470.0
-World of Tanks,en,5294.0,13503.0
-World of Tanks,sp,35.0,220.0
-World of Tanks,pt,15.0,160.0
-World of Tanks,de,939.0,2938.0
-World of Tanks,ru,40.0,563.0
-World of Tanks,fr,156.0,87.0
-World of Tanks,ko,136.0,45.0
-World of Tanks,ja,249.0,94.0
-World of Tanks,ch,146.0,55.0
-World of Tanks,it,3.0,16.0
-World of Tanks,ot,961.0,2986.0
-Rocket League,en,2105.0,58479.0
-Rocket League,sp,209.0,2961.0
-Rocket League,pt,90.0,2501.0
-Rocket League,de,469.0,441.0
-Rocket League,ru,25.0,164.0
-Rocket League,fr,4064.0,13025.0
-Rocket League,ko,0.0,0.0
-Rocket League,ja,91.0,521.0
-Rocket League,ch,0.0,0.0
-Rocket League,it,125.0,108.0
-Rocket League,ot,116.0,700.0
-Grounded,en,100.0,186.0
-Grounded,sp,0.0,13.0
-Grounded,pt,7301.0,16557.0
-Grounded,de,12.0,21.0
-Grounded,ru,2.0,10.0
-Grounded,fr,3.0,31.0
-Grounded,ko,9.0,10.0
-Grounded,ja,9.0,2.0
-Grounded,ch,5.0,16.0
-Grounded,it,1.0,10.0
-Grounded,ot,11.0,19.0
-Persona 5 Royal,en,108.0,
-Persona 5 Royal,sp,1.0,
-Persona 5 Royal,pt,4.0,
-Persona 5 Royal,de,0.0,
-Persona 5 Royal,ru,3.0,
-Persona 5 Royal,fr,2.0,
-Persona 5 Royal,ko,24.0,
-Persona 5 Royal,ja,6620.0,
-Persona 5 Royal,ch,0.0,
-Persona 5 Royal,it,0.0,
-Persona 5 Royal,ot,2.0,
-Tekken 7,en,3700.0,4175.0
-Tekken 7,sp,66.0,132.0
-Tekken 7,pt,39.0,43.0
-Tekken 7,de,18.0,17.0
-Tekken 7,ru,183.0,248.0
-Tekken 7,fr,39.0,51.0
-Tekken 7,ko,1786.0,1864.0
-Tekken 7,ja,466.0,382.0
-Tekken 7,ch,0.0,0.0
-Tekken 7,it,13.0,0.0
-Tekken 7,ot,74.0,70.0
-DayZ,en,4688.0,5352.0
-DayZ,sp,10.0,246.0
-DayZ,pt,91.0,108.0
-DayZ,de,188.0,232.0
-DayZ,ru,28.0,283.0
-DayZ,fr,265.0,502.0
-DayZ,ko,5.0,61.0
-DayZ,ja,16.0,4.0
-DayZ,ch,14.0,28.0
-DayZ,it,2.0,1.0
-DayZ,ot,185.0,555.0
-Sally Face,en,5438.0,
-Sally Face,sp,0.0,
-Sally Face,pt,0.0,
-Sally Face,de,0.0,
-Sally Face,ru,0.0,
-Sally Face,fr,0.0,
-Sally Face,ko,0.0,
-Sally Face,ja,0.0,
-Sally Face,ch,0.0,
-Sally Face,it,0.0,
-Sally Face,ot,0.0,
-Old School RuneScape,en,5259.0,6452.0
-Old School RuneScape,sp,1.0,3.0
-Old School RuneScape,pt,3.0,12.0
-Old School RuneScape,de,0.0,0.0
-Old School RuneScape,ru,1.0,51.0
-Old School RuneScape,fr,0.0,0.0
-Old School RuneScape,ko,0.0,0.0
-Old School RuneScape,ja,0.0,0.0
-Old School RuneScape,ch,0.0,0.0
-Old School RuneScape,it,0.0,0.0
-Old School RuneScape,ot,152.0,65.0
-Honkai: Star Rail,en,3376.0,
-Honkai: Star Rail,sp,196.0,
-Honkai: Star Rail,pt,186.0,
-Honkai: Star Rail,de,125.0,
-Honkai: Star Rail,ru,91.0,
-Honkai: Star Rail,fr,18.0,
-Honkai: Star Rail,ko,928.0,
-Honkai: Star Rail,ja,80.0,
-Honkai: Star Rail,ch,106.0,
-Honkai: Star Rail,it,91.0,
-Honkai: Star Rail,ot,10.0,
-Choo-Choo Charles,en,73.0,
-Choo-Choo Charles,sp,0.0,
-Choo-Choo Charles,pt,0.0,
-Choo-Choo Charles,de,0.0,
-Choo-Choo Charles,ru,0.0,
-Choo-Choo Charles,fr,0.0,
-Choo-Choo Charles,ko,5065.0,
-Choo-Choo Charles,ja,0.0,
-Choo-Choo Charles,ch,0.0,
-Choo-Choo Charles,it,0.0,
-Choo-Choo Charles,ot,0.0,
-Call of Duty: Modern Warfare II,en,3031.0,4733.0
-Call of Duty: Modern Warfare II,sp,71.0,287.0
-Call of Duty: Modern Warfare II,pt,126.0,159.0
-Call of Duty: Modern Warfare II,de,559.0,398.0
-Call of Duty: Modern Warfare II,ru,19.0,51.0
-Call of Duty: Modern Warfare II,fr,336.0,224.0
-Call of Duty: Modern Warfare II,ko,23.0,5.0
-Call of Duty: Modern Warfare II,ja,93.0,28.0
-Call of Duty: Modern Warfare II,ch,1.0,13.0
-Call of Duty: Modern Warfare II,it,80.0,101.0
-Call of Duty: Modern Warfare II,ot,316.0,475.0
-StarCraft II,en,3189.0,
-StarCraft II,sp,39.0,
-StarCraft II,pt,0.0,
-StarCraft II,de,1.0,
-StarCraft II,ru,164.0,
-StarCraft II,fr,266.0,
-StarCraft II,ko,829.0,
-StarCraft II,ja,0.0,
-StarCraft II,ch,8.0,
-StarCraft II,it,1.0,
-StarCraft II,ot,351.0,
-Tom Clancy's Rainbow Six Siege,en,2664.0,3726.0
-Tom Clancy's Rainbow Six Siege,sp,13.0,243.0
-Tom Clancy's Rainbow Six Siege,pt,75.0,538.0
-Tom Clancy's Rainbow Six Siege,de,403.0,239.0
-Tom Clancy's Rainbow Six Siege,ru,48.0,260.0
-Tom Clancy's Rainbow Six Siege,fr,631.0,509.0
-Tom Clancy's Rainbow Six Siege,ko,201.0,234.0
-Tom Clancy's Rainbow Six Siege,ja,71.0,164.0
-Tom Clancy's Rainbow Six Siege,ch,88.0,62.0
-Tom Clancy's Rainbow Six Siege,it,148.0,125.0
-Tom Clancy's Rainbow Six Siege,ot,186.0,371.0
-Destiny 2,en,3266.0,12818.0
-Destiny 2,sp,12.0,269.0
-Destiny 2,pt,232.0,162.0
-Destiny 2,de,149.0,431.0
-Destiny 2,ru,70.0,140.0
-Destiny 2,fr,127.0,76.0
-Destiny 2,ko,85.0,57.0
-Destiny 2,ja,70.0,108.0
-Destiny 2,ch,37.0,29.0
-Destiny 2,it,3.0,184.0
-Destiny 2,ot,22.0,44.0
-Mr. Gimmick,en,60.0,
-Mr. Gimmick,sp,0.0,
-Mr. Gimmick,pt,0.0,
-Mr. Gimmick,de,0.0,
-Mr. Gimmick,ru,0.0,
-Mr. Gimmick,fr,0.0,
-Mr. Gimmick,ko,4006.0,
-Mr. Gimmick,ja,0.0,
-Mr. Gimmick,ch,0.0,
-Mr. Gimmick,it,0.0,
-Mr. Gimmick,ot,0.0,
-Wo Long: Fallen Dynasty,en,10.0,
-Wo Long: Fallen Dynasty,sp,0.0,
-Wo Long: Fallen Dynasty,pt,0.0,
-Wo Long: Fallen Dynasty,de,5.0,
-Wo Long: Fallen Dynasty,ru,3.0,
-Wo Long: Fallen Dynasty,fr,1.0,
-Wo Long: Fallen Dynasty,ko,12.0,
-Wo Long: Fallen Dynasty,ja,5.0,
-Wo Long: Fallen Dynasty,ch,3989.0,
-Wo Long: Fallen Dynasty,it,0.0,
-Wo Long: Fallen Dynasty,ot,0.0,
-7 Days to Die,en,2132.0,
-7 Days to Die,sp,72.0,
-7 Days to Die,pt,12.0,
-7 Days to Die,de,551.0,
-7 Days to Die,ru,130.0,
-7 Days to Die,fr,201.0,
-7 Days to Die,ko,96.0,
-7 Days to Die,ja,478.0,
-7 Days to Die,ch,15.0,
-7 Days to Die,it,2.0,
-7 Days to Die,ot,47.0,
-Hunt: Showdown,en,2231.0,2755.0
-Hunt: Showdown,sp,21.0,57.0
-Hunt: Showdown,pt,16.0,54.0
-Hunt: Showdown,de,653.0,1456.0
-Hunt: Showdown,ru,447.0,667.0
-Hunt: Showdown,fr,219.0,118.0
-Hunt: Showdown,ko,11.0,4.0
-Hunt: Showdown,ja,20.0,14.0
-Hunt: Showdown,ch,5.0,3.0
-Hunt: Showdown,it,6.0,22.0
-Hunt: Showdown,ot,352.0,754.0
-Baldur's Gate 3,en,,35050.0
-Baldur's Gate 3,sp,,4348.0
-Baldur's Gate 3,pt,,5.0
-Baldur's Gate 3,de,,13.0
-Baldur's Gate 3,ru,,56.0
-Baldur's Gate 3,fr,,977.0
-Baldur's Gate 3,ko,,36.0
-Baldur's Gate 3,ja,,0.0
-Baldur's Gate 3,ch,,1.0
-Baldur's Gate 3,it,,15.0
-Baldur's Gate 3,ot,,202.0
-Sekiro: Shadows Die Twice,en,,10454.0
-Sekiro: Shadows Die Twice,sp,,40.0
-Sekiro: Shadows Die Twice,pt,,70.0
-Sekiro: Shadows Die Twice,de,,108.0
-Sekiro: Shadows Die Twice,ru,,488.0
-Sekiro: Shadows Die Twice,fr,,4.0
-Sekiro: Shadows Die Twice,ko,,10.0
-Sekiro: Shadows Die Twice,ja,,56.0
-Sekiro: Shadows Die Twice,ch,,27.0
-Sekiro: Shadows Die Twice,it,,13.0
-Sekiro: Shadows Die Twice,ot,,13.0
-Until Dawn,en,,9140.0
-Until Dawn,sp,,0.0
-Until Dawn,pt,,0.0
-Until Dawn,de,,5.0
-Until Dawn,ru,,0.0
-Until Dawn,fr,,0.0
-Until Dawn,ko,,0.0
-Until Dawn,ja,,0.0
-Until Dawn,ch,,0.0
-Until Dawn,it,,0.0
-Until Dawn,ot,,0.0
-Everybody 1-2-Switch,en,,0.0
-Everybody 1-2-Switch,sp,,0.0
-Everybody 1-2-Switch,pt,,0.0
-Everybody 1-2-Switch,de,,0.0
-Everybody 1-2-Switch,ru,,0.0
-Everybody 1-2-Switch,fr,,0.0
-Everybody 1-2-Switch,ko,,0.0
-Everybody 1-2-Switch,ja,,0.0
-Everybody 1-2-Switch,ch,,8399.0
-Everybody 1-2-Switch,it,,0.0
-Everybody 1-2-Switch,ot,,0.0
-Super Mario World,en,,6399.0
-Super Mario World,sp,,0.0
-Super Mario World,pt,,0.0
-Super Mario World,de,,108.0
-Super Mario World,ru,,0.0
-Super Mario World,fr,,0.0
-Super Mario World,ko,,0.0
-Super Mario World,ja,,65.0
-Super Mario World,ch,,0.0
-Super Mario World,it,,0.0
-Super Mario World,ot,,0.0
-Super Mario 64,en,,5144.0
-Super Mario 64,sp,,7.0
-Super Mario 64,pt,,0.0
-Super Mario 64,de,,8.0
-Super Mario 64,ru,,0.0
-Super Mario 64,fr,,621.0
-Super Mario 64,ko,,0.0
-Super Mario 64,ja,,183.0
-Super Mario 64,ch,,0.0
-Super Mario 64,it,,0.0
-Super Mario 64,ot,,0.0
-Yu-Gi-Oh! Master Duel,en,,4897.0
-Yu-Gi-Oh! Master Duel,sp,,15.0
-Yu-Gi-Oh! Master Duel,pt,,96.0
-Yu-Gi-Oh! Master Duel,de,,37.0
-Yu-Gi-Oh! Master Duel,ru,,0.0
-Yu-Gi-Oh! Master Duel,fr,,71.0
-Yu-Gi-Oh! Master Duel,ko,,1016.0
-Yu-Gi-Oh! Master Duel,ja,,9.0
-Yu-Gi-Oh! Master Duel,ch,,12.0
-Yu-Gi-Oh! Master Duel,it,,2.0
-Yu-Gi-Oh! Master Duel,ot,,0.0
-Trackmania,en,,6241.0
-Trackmania,sp,,4.0
-Trackmania,pt,,5.0
-Trackmania,de,,488.0
-Trackmania,ru,,11.0
-Trackmania,fr,,235.0
-Trackmania,ko,,0.0
-Trackmania,ja,,0.0
-Trackmania,ch,,0.0
-Trackmania,it,,11.0
-Trackmania,ot,,14.0
-PowerWash Simulator,en,,4984.0
-PowerWash Simulator,sp,,7.0
-PowerWash Simulator,pt,,0.0
-PowerWash Simulator,de,,16.0
-PowerWash Simulator,ru,,169.0
-PowerWash Simulator,fr,,17.0
-PowerWash Simulator,ko,,83.0
-PowerWash Simulator,ja,,3.0
-PowerWash Simulator,ch,,0.0
-PowerWash Simulator,it,,0.0
-PowerWash Simulator,ot,,3.0
-Journey to the West,en,,0.0
-Journey to the West,sp,,0.0
-Journey to the West,pt,,0.0
-Journey to the West,de,,0.0
-Journey to the West,ru,,0.0
-Journey to the West,fr,,0.0
-Journey to the West,ko,,0.0
-Journey to the West,ja,,0.0
-Journey to the West,ch,,5317.0
-Journey to the West,it,,0.0
-Journey to the West,ot,,0.0
+game,language,2023-07-07 14:00:00,2023-07-07 19:00:00,2023-07-07 21:00:00
+Dota 2,en,47498.0,24469.0,4661.0
+Dota 2,sp,1593.0,211.0,1157.0
+Dota 2,pt,2241.0,1943.0,1891.0
+Dota 2,de,109.0,83.0,217.0
+Dota 2,ru,101123.0,24428.0,23533.0
+Dota 2,fr,382.0,2.0,15.0
+Dota 2,ko,151.0,21.0,15.0
+Dota 2,ja,104.0,21.0,6.0
+Dota 2,ch,7.0,2.0,4.0
+Dota 2,it,1.0,13.0,24.0
+Dota 2,ot,10193.0,3677.0,2745.0
+League of Legends,en,55216.0,28798.0,30930.0
+League of Legends,sp,6237.0,15420.0,17792.0
+League of Legends,pt,10596.0,16169.0,8727.0
+League of Legends,de,9080.0,21453.0,17011.0
+League of Legends,ru,2362.0,3885.0,3240.0
+League of Legends,fr,10487.0,6902.0,15689.0
+League of Legends,ko,20897.0,25324.0,21725.0
+League of Legends,ja,3716.0,1746.0,895.0
+League of Legends,ch,15624.0,4027.0,2759.0
+League of Legends,it,1496.0,2489.0,1840.0
+League of Legends,ot,10791.0,17724.0,22384.0
+VALORANT,en,31810.0,36466.0,30603.0
+VALORANT,sp,3418.0,8723.0,8542.0
+VALORANT,pt,5220.0,11801.0,12011.0
+VALORANT,de,6141.0,9636.0,11014.0
+VALORANT,ru,7912.0,7917.0,8650.0
+VALORANT,fr,6387.0,13634.0,3964.0
+VALORANT,ko,13619.0,19674.0,11875.0
+VALORANT,ja,55661.0,51115.0,17846.0
+VALORANT,ch,4756.0,4458.0,4250.0
+VALORANT,it,1081.0,716.0,405.0
+VALORANT,ot,9639.0,12210.0,10528.0
+Street Fighter 6,en,7153.0,4892.0,7980.0
+Street Fighter 6,sp,580.0,351.0,52.0
+Street Fighter 6,pt,68.0,418.0,1083.0
+Street Fighter 6,de,1598.0,24.0,61.0
+Street Fighter 6,ru,126.0,19.0,80.0
+Street Fighter 6,fr,2773.0,262.0,778.0
+Street Fighter 6,ko,632.0,211.0,143.0
+Street Fighter 6,ja,69614.0,6843.0,4934.0
+Street Fighter 6,ch,3620.0,4849.0,6406.0
+Street Fighter 6,it,5.0,99.0,618.0
+Street Fighter 6,ot,191.0,91.0,30.0
+Grand Theft Auto V,en,15914.0,29163.0,29965.0
+Grand Theft Auto V,sp,422.0,2563.0,5637.0
+Grand Theft Auto V,pt,1977.0,10939.0,23627.0
+Grand Theft Auto V,de,5146.0,12889.0,20455.0
+Grand Theft Auto V,ru,3918.0,6238.0,7877.0
+Grand Theft Auto V,fr,2182.0,5080.0,9850.0
+Grand Theft Auto V,ko,429.0,38.0,702.0
+Grand Theft Auto V,ja,2616.0,3088.0,1932.0
+Grand Theft Auto V,ch,4164.0,7180.0,994.0
+Grand Theft Auto V,it,1692.0,2543.0,4816.0
+Grand Theft Auto V,ot,31719.0,36400.0,46343.0
+Teamfight Tactics,en,23737.0,21292.0,20782.0
+Teamfight Tactics,sp,3006.0,4951.0,3797.0
+Teamfight Tactics,pt,3121.0,7320.0,5086.0
+Teamfight Tactics,de,4333.0,453.0,754.0
+Teamfight Tactics,ru,449.0,248.0,347.0
+Teamfight Tactics,fr,629.0,5563.0,830.0
+Teamfight Tactics,ko,7567.0,10763.0,2910.0
+Teamfight Tactics,ja,636.0,914.0,813.0
+Teamfight Tactics,ch,6872.0,791.0,477.0
+Teamfight Tactics,it,144.0,58.0,11.0
+Teamfight Tactics,ot,3238.0,3779.0,3453.0
+Counter-Strike: Global Offensive,en,21769.0,64033.0,227617.0
+Counter-Strike: Global Offensive,sp,195.0,1328.0,1787.0
+Counter-Strike: Global Offensive,pt,4205.0,6124.0,5590.0
+Counter-Strike: Global Offensive,de,753.0,671.0,36684.0
+Counter-Strike: Global Offensive,ru,16918.0,17643.0,11554.0
+Counter-Strike: Global Offensive,fr,146.0,750.0,790.0
+Counter-Strike: Global Offensive,ko,22.0,29.0,70.0
+Counter-Strike: Global Offensive,ja,95.0,52.0,57.0
+Counter-Strike: Global Offensive,ch,57.0,201.0,46.0
+Counter-Strike: Global Offensive,it,3.0,40.0,6.0
+Counter-Strike: Global Offensive,ot,4734.0,4631.0,13247.0
+Only Up!,en,3248.0,2841.0,6278.0
+Only Up!,sp,778.0,58974.0,912.0
+Only Up!,pt,59.0,971.0,99.0
+Only Up!,de,118.0,2656.0,1896.0
+Only Up!,ru,305.0,496.0,989.0
+Only Up!,fr,92.0,258.0,1351.0
+Only Up!,ko,1252.0,5723.0,1620.0
+Only Up!,ja,23765.0,4967.0,2412.0
+Only Up!,ch,3131.0,1784.0,797.0
+Only Up!,it,1362.0,3059.0,309.0
+Only Up!,ot,1177.0,759.0,891.0
+Fortnite,en,13234.0,49453.0,61430.0
+Fortnite,sp,3177.0,10958.0,9792.0
+Fortnite,pt,1069.0,2454.0,2083.0
+Fortnite,de,2244.0,5819.0,9869.0
+Fortnite,ru,1744.0,2198.0,3068.0
+Fortnite,fr,2462.0,23860.0,31301.0
+Fortnite,ko,41.0,4.0,5.0
+Fortnite,ja,456.0,292.0,186.0
+Fortnite,ch,0.0,4.0,0.0
+Fortnite,it,2368.0,4609.0,1813.0
+Fortnite,ot,1584.0,7521.0,20426.0
+Apex Legends,en,11451.0,17655.0,8754.0
+Apex Legends,sp,235.0,596.0,500.0
+Apex Legends,pt,17.0,165.0,304.0
+Apex Legends,de,925.0,1159.0,275.0
+Apex Legends,ru,784.0,1935.0,658.0
+Apex Legends,fr,1900.0,2213.0,769.0
+Apex Legends,ko,2018.0,277.0,75.0
+Apex Legends,ja,4922.0,8574.0,403.0
+Apex Legends,ch,3069.0,1877.0,229.0
+Apex Legends,it,313.0,243.0,18.0
+Apex Legends,ot,664.0,910.0,232.0
+Minecraft,en,10154.0,17591.0,22344.0
+Minecraft,sp,597.0,2538.0,3222.0
+Minecraft,pt,310.0,823.0,12063.0
+Minecraft,de,680.0,25005.0,19772.0
+Minecraft,ru,3318.0,3558.0,5650.0
+Minecraft,fr,1222.0,1088.0,2032.0
+Minecraft,ko,5206.0,8359.0,239.0
+Minecraft,ja,750.0,1317.0,754.0
+Minecraft,ch,746.0,561.0,310.0
+Minecraft,it,1318.0,526.0,1733.0
+Minecraft,ot,942.0,3226.0,2215.0
+MapleStory,en,487.0,759.0,680.0
+MapleStory,sp,2.0,0.0,10.0
+MapleStory,pt,8.0,20.0,19.0
+MapleStory,de,0.0,4.0,0.0
+MapleStory,ru,0.0,0.0,0.0
+MapleStory,fr,0.0,0.0,0.0
+MapleStory,ko,23756.0,60762.0,47614.0
+MapleStory,ja,71.0,42.0,58.0
+MapleStory,ch,857.0,1110.0,484.0
+MapleStory,it,0.0,0.0,0.0
+MapleStory,ot,0.0,0.0,0.0
+World of Warcraft,en,16714.0,32130.0,48044.0
+World of Warcraft,sp,288.0,1193.0,1088.0
+World of Warcraft,pt,250.0,691.0,697.0
+World of Warcraft,de,887.0,2319.0,3648.0
+World of Warcraft,ru,1169.0,2927.0,2556.0
+World of Warcraft,fr,658.0,762.0,1544.0
+World of Warcraft,ko,2599.0,1506.0,531.0
+World of Warcraft,ja,0.0,2.0,0.0
+World of Warcraft,ch,143.0,437.0,73.0
+World of Warcraft,it,48.0,26.0,46.0
+World of Warcraft,ot,385.0,655.0,969.0
+Black Desert,en,4765.0,5380.0,5073.0
+Black Desert,sp,371.0,1139.0,4626.0
+Black Desert,pt,713.0,1424.0,1166.0
+Black Desert,de,1141.0,1852.0,1911.0
+Black Desert,ru,740.0,852.0,794.0
+Black Desert,fr,190.0,171.0,220.0
+Black Desert,ko,13501.0,7760.0,4732.0
+Black Desert,ja,96.0,16.0,0.0
+Black Desert,ch,319.0,288.0,188.0
+Black Desert,it,0.0,1.0,6.0
+Black Desert,ot,421.0,575.0,718.0
+Call of Duty: Warzone,en,11406.0,21479.0,22300.0
+Call of Duty: Warzone,sp,887.0,2454.0,4698.0
+Call of Duty: Warzone,pt,866.0,1249.0,1686.0
+Call of Duty: Warzone,de,1958.0,2664.0,2361.0
+Call of Duty: Warzone,ru,897.0,811.0,848.0
+Call of Duty: Warzone,fr,2659.0,2120.0,2721.0
+Call of Duty: Warzone,ko,50.0,22.0,22.0
+Call of Duty: Warzone,ja,24.0,31.0,0.0
+Call of Duty: Warzone,ch,51.0,9.0,6.0
+Call of Duty: Warzone,it,1260.0,1457.0,2313.0
+Call of Duty: Warzone,ot,2372.0,2024.0,1933.0
+Dead by Daylight,en,5654.0,12181.0,15297.0
+Dead by Daylight,sp,548.0,890.0,1384.0
+Dead by Daylight,pt,302.0,1900.0,2216.0
+Dead by Daylight,de,2994.0,4658.0,5231.0
+Dead by Daylight,ru,1618.0,2306.0,2130.0
+Dead by Daylight,fr,942.0,555.0,953.0
+Dead by Daylight,ko,3126.0,4071.0,669.0
+Dead by Daylight,ja,1498.0,1467.0,723.0
+Dead by Daylight,ch,2980.0,1033.0,837.0
+Dead by Daylight,it,72.0,229.0,187.0
+Dead by Daylight,ot,652.0,1049.0,2889.0
+Diablo IV,en,9432.0,25537.0,31042.0
+Diablo IV,sp,343.0,359.0,993.0
+Diablo IV,pt,315.0,772.0,749.0
+Diablo IV,de,2680.0,2357.0,3142.0
+Diablo IV,ru,703.0,802.0,861.0
+Diablo IV,fr,736.0,1940.0,2407.0
+Diablo IV,ko,1667.0,709.0,457.0
+Diablo IV,ja,416.0,561.0,327.0
+Diablo IV,ch,1145.0,1029.0,717.0
+Diablo IV,it,233.0,313.0,278.0
+Diablo IV,ot,2404.0,1239.0,1400.0
+Genshin Impact,en,4510.0,8674.0,8093.0
+Genshin Impact,sp,255.0,2000.0,1014.0
+Genshin Impact,pt,589.0,1219.0,1426.0
+Genshin Impact,de,345.0,658.0,723.0
+Genshin Impact,ru,2307.0,2135.0,1889.0
+Genshin Impact,fr,803.0,1381.0,912.0
+Genshin Impact,ko,1819.0,1237.0,272.0
+Genshin Impact,ja,1547.0,1196.0,688.0
+Genshin Impact,ch,3962.0,1467.0,533.0
+Genshin Impact,it,517.0,1185.0,188.0
+Genshin Impact,ot,804.0,1042.0,764.0
+FIFA 23,en,4836.0,35157.0,18941.0
+FIFA 23,sp,1196.0,8638.0,5854.0
+FIFA 23,pt,1663.0,11870.0,8695.0
+FIFA 23,de,3854.0,19535.0,16744.0
+FIFA 23,ru,216.0,908.0,451.0
+FIFA 23,fr,3287.0,6491.0,1359.0
+FIFA 23,ko,77.0,17.0,44.0
+FIFA 23,ja,75.0,9.0,4.0
+FIFA 23,ch,0.0,1.0,1.0
+FIFA 23,it,700.0,2187.0,1086.0
+FIFA 23,ot,795.0,7627.0,6681.0
+Escape from Tarkov,en,7917.0,8618.0,8534.0
+Escape from Tarkov,sp,189.0,280.0,293.0
+Escape from Tarkov,pt,492.0,654.0,535.0
+Escape from Tarkov,de,1394.0,2066.0,1995.0
+Escape from Tarkov,ru,3796.0,5478.0,2914.0
+Escape from Tarkov,fr,299.0,908.0,251.0
+Escape from Tarkov,ko,569.0,49.0,59.0
+Escape from Tarkov,ja,595.0,1998.0,2845.0
+Escape from Tarkov,ch,27.0,14.0,8.0
+Escape from Tarkov,it,486.0,61.0,326.0
+Escape from Tarkov,ot,1084.0,1663.0,1158.0
+PUBG: BATTLEGROUNDS,en,1719.0,5351.0,8982.0
+PUBG: BATTLEGROUNDS,sp,27.0,208.0,177.0
+PUBG: BATTLEGROUNDS,pt,287.0,716.0,848.0
+PUBG: BATTLEGROUNDS,de,523.0,801.0,1768.0
+PUBG: BATTLEGROUNDS,ru,1215.0,2776.0,6225.0
+PUBG: BATTLEGROUNDS,fr,670.0,56.0,158.0
+PUBG: BATTLEGROUNDS,ko,1452.0,245.0,206.0
+PUBG: BATTLEGROUNDS,ja,762.0,34.0,1.0
+PUBG: BATTLEGROUNDS,ch,3412.0,120.0,23.0
+PUBG: BATTLEGROUNDS,it,2.0,9.0,12.0
+PUBG: BATTLEGROUNDS,ot,4932.0,2766.0,3299.0
+Rust,en,4940.0,5203.0,7869.0
+Rust,sp,3887.0,9539.0,42117.0
+Rust,pt,161.0,797.0,869.0
+Rust,de,1287.0,646.0,784.0
+Rust,ru,436.0,483.0,750.0
+Rust,fr,1560.0,1080.0,1091.0
+Rust,ko,931.0,551.0,378.0
+Rust,ja,1478.0,1111.0,468.0
+Rust,ch,22.0,16.0,4.0
+Rust,it,169.0,151.0,185.0
+Rust,ot,819.0,1419.0,1296.0
+Hearthstone,en,8311.0,9770.0,11596.0
+Hearthstone,sp,274.0,681.0,667.0
+Hearthstone,pt,14.0,29.0,20.0
+Hearthstone,de,43.0,85.0,75.0
+Hearthstone,ru,5339.0,9904.0,2418.0
+Hearthstone,fr,1223.0,1695.0,1841.0
+Hearthstone,ko,450.0,415.0,389.0
+Hearthstone,ja,285.0,417.0,0.0
+Hearthstone,ch,75.0,477.0,784.0
+Hearthstone,it,285.0,14.0,37.0
+Hearthstone,ot,295.0,1446.0,1761.0
+New World,en,9847.0,13612.0,10874.0
+New World,sp,724.0,1680.0,1254.0
+New World,pt,1211.0,1743.0,1830.0
+New World,de,1069.0,1359.0,1379.0
+New World,ru,536.0,772.0,676.0
+New World,fr,850.0,672.0,789.0
+New World,ko,1.0,0.0,0.0
+New World,ja,14.0,8.0,0.0
+New World,ch,0.0,0.0,0.0
+New World,it,20.0,0.0,5.0
+New World,ot,409.0,529.0,519.0
+BattleBit Remastered,en,9974.0,13489.0,16263.0
+BattleBit Remastered,sp,83.0,209.0,296.0
+BattleBit Remastered,pt,649.0,1110.0,927.0
+BattleBit Remastered,de,254.0,691.0,675.0
+BattleBit Remastered,ru,458.0,155.0,275.0
+BattleBit Remastered,fr,76.0,151.0,85.0
+BattleBit Remastered,ko,0.0,0.0,0.0
+BattleBit Remastered,ja,657.0,337.0,50.0
+BattleBit Remastered,ch,38.0,18.0,11.0
+BattleBit Remastered,it,22.0,652.0,990.0
+BattleBit Remastered,ot,86.0,86.0,158.0
+Overwatch 2,en,5772.0,8179.0,13216.0
+Overwatch 2,sp,311.0,1173.0,1944.0
+Overwatch 2,pt,94.0,196.0,256.0
+Overwatch 2,de,103.0,324.0,339.0
+Overwatch 2,ru,1000.0,737.0,899.0
+Overwatch 2,fr,963.0,924.0,1042.0
+Overwatch 2,ko,1847.0,1577.0,1271.0
+Overwatch 2,ja,874.0,1630.0,992.0
+Overwatch 2,ch,125.0,283.0,186.0
+Overwatch 2,it,39.0,211.0,71.0
+Overwatch 2,ot,1049.0,2350.0,2527.0
+Sea of Thieves,en,1058.0,4090.0,9594.0
+Sea of Thieves,sp,21.0,53.0,52.0
+Sea of Thieves,pt,94.0,143.0,654.0
+Sea of Thieves,de,269.0,294.0,431.0
+Sea of Thieves,ru,139.0,101.0,145.0
+Sea of Thieves,fr,118.0,244.0,459.0
+Sea of Thieves,ko,278.0,16.0,0.0
+Sea of Thieves,ja,6.0,7.0,1.0
+Sea of Thieves,ch,9376.0,8390.0,4786.0
+Sea of Thieves,it,10.0,4.0,77.0
+Sea of Thieves,ot,60.0,213.0,393.0
+Albion Online,en,3613.0,4211.0,3448.0
+Albion Online,sp,1712.0,1736.0,2066.0
+Albion Online,pt,823.0,1205.0,949.0
+Albion Online,de,26.0,7.0,11.0
+Albion Online,ru,682.0,458.0,547.0
+Albion Online,fr,189.0,75.0,70.0
+Albion Online,ko,193.0,143.0,73.0
+Albion Online,ja,442.0,291.0,187.0
+Albion Online,ch,1181.0,979.0,660.0
+Albion Online,it,0.0,1.0,0.0
+Albion Online,ot,240.0,453.0,587.0
+The Callisto Protocol,en,9024.0,,
+The Callisto Protocol,sp,0.0,,
+The Callisto Protocol,pt,1.0,,
+The Callisto Protocol,de,0.0,,
+The Callisto Protocol,ru,15.0,,
+The Callisto Protocol,fr,2.0,,
+The Callisto Protocol,ko,4.0,,
+The Callisto Protocol,ja,0.0,,
+The Callisto Protocol,ch,0.0,,
+The Callisto Protocol,it,0.0,,
+The Callisto Protocol,ot,0.0,,
+Lost Ark,en,1863.0,,
+Lost Ark,sp,128.0,,
+Lost Ark,pt,301.0,,
+Lost Ark,de,124.0,,
+Lost Ark,ru,379.0,,
+Lost Ark,fr,143.0,,
+Lost Ark,ko,5476.0,,
+Lost Ark,ja,38.0,,
+Lost Ark,ch,45.0,,
+Lost Ark,it,1.0,,
+Lost Ark,ot,128.0,,
+FINAL FANTASY XVI,en,6289.0,2389.0,6082.0
+FINAL FANTASY XVI,sp,86.0,120.0,159.0
+FINAL FANTASY XVI,pt,150.0,438.0,571.0
+FINAL FANTASY XVI,de,186.0,742.0,880.0
+FINAL FANTASY XVI,ru,199.0,359.0,413.0
+FINAL FANTASY XVI,fr,268.0,512.0,469.0
+FINAL FANTASY XVI,ko,339.0,411.0,257.0
+FINAL FANTASY XVI,ja,388.0,167.0,70.0
+FINAL FANTASY XVI,ch,238.0,277.0,35.0
+FINAL FANTASY XVI,it,2.0,77.0,86.0
+FINAL FANTASY XVI,ot,209.0,2047.0,2219.0
+Dave the Diver,en,1421.0,7930.0,2865.0
+Dave the Diver,sp,300.0,207.0,747.0
+Dave the Diver,pt,1286.0,58.0,131.0
+Dave the Diver,de,169.0,60.0,96.0
+Dave the Diver,ru,53.0,45.0,2.0
+Dave the Diver,fr,1001.0,158.0,2604.0
+Dave the Diver,ko,2530.0,1658.0,855.0
+Dave the Diver,ja,141.0,63.0,41.0
+Dave the Diver,ch,206.0,375.0,324.0
+Dave the Diver,it,1.0,1.0,0.0
+Dave the Diver,ot,864.0,470.0,197.0
+World of Tanks,en,5294.0,13503.0,12373.0
+World of Tanks,sp,35.0,220.0,226.0
+World of Tanks,pt,15.0,160.0,8.0
+World of Tanks,de,939.0,2938.0,2997.0
+World of Tanks,ru,40.0,563.0,370.0
+World of Tanks,fr,156.0,87.0,152.0
+World of Tanks,ko,136.0,45.0,1.0
+World of Tanks,ja,249.0,94.0,31.0
+World of Tanks,ch,146.0,55.0,1.0
+World of Tanks,it,3.0,16.0,0.0
+World of Tanks,ot,961.0,2986.0,3646.0
+Rocket League,en,2105.0,58479.0,68698.0
+Rocket League,sp,209.0,2961.0,2990.0
+Rocket League,pt,90.0,2501.0,4204.0
+Rocket League,de,469.0,441.0,557.0
+Rocket League,ru,25.0,164.0,195.0
+Rocket League,fr,4064.0,13025.0,12907.0
+Rocket League,ko,0.0,0.0,0.0
+Rocket League,ja,91.0,521.0,84.0
+Rocket League,ch,0.0,0.0,0.0
+Rocket League,it,125.0,108.0,45.0
+Rocket League,ot,116.0,700.0,716.0
+Grounded,en,100.0,186.0,238.0
+Grounded,sp,0.0,13.0,7.0
+Grounded,pt,7301.0,16557.0,16536.0
+Grounded,de,12.0,21.0,242.0
+Grounded,ru,2.0,10.0,0.0
+Grounded,fr,3.0,31.0,28.0
+Grounded,ko,9.0,10.0,0.0
+Grounded,ja,9.0,2.0,1.0
+Grounded,ch,5.0,16.0,5.0
+Grounded,it,1.0,10.0,0.0
+Grounded,ot,11.0,19.0,34.0
+Persona 5 Royal,en,108.0,,
+Persona 5 Royal,sp,1.0,,
+Persona 5 Royal,pt,4.0,,
+Persona 5 Royal,de,0.0,,
+Persona 5 Royal,ru,3.0,,
+Persona 5 Royal,fr,2.0,,
+Persona 5 Royal,ko,24.0,,
+Persona 5 Royal,ja,6620.0,,
+Persona 5 Royal,ch,0.0,,
+Persona 5 Royal,it,0.0,,
+Persona 5 Royal,ot,2.0,,
+Tekken 7,en,3700.0,4175.0,
+Tekken 7,sp,66.0,132.0,
+Tekken 7,pt,39.0,43.0,
+Tekken 7,de,18.0,17.0,
+Tekken 7,ru,183.0,248.0,
+Tekken 7,fr,39.0,51.0,
+Tekken 7,ko,1786.0,1864.0,
+Tekken 7,ja,466.0,382.0,
+Tekken 7,ch,0.0,0.0,
+Tekken 7,it,13.0,0.0,
+Tekken 7,ot,74.0,70.0,
+DayZ,en,4688.0,5352.0,5964.0
+DayZ,sp,10.0,246.0,226.0
+DayZ,pt,91.0,108.0,188.0
+DayZ,de,188.0,232.0,606.0
+DayZ,ru,28.0,283.0,867.0
+DayZ,fr,265.0,502.0,767.0
+DayZ,ko,5.0,61.0,60.0
+DayZ,ja,16.0,4.0,0.0
+DayZ,ch,14.0,28.0,28.0
+DayZ,it,2.0,1.0,7.0
+DayZ,ot,185.0,555.0,616.0
+Sally Face,en,5438.0,,
+Sally Face,sp,0.0,,
+Sally Face,pt,0.0,,
+Sally Face,de,0.0,,
+Sally Face,ru,0.0,,
+Sally Face,fr,0.0,,
+Sally Face,ko,0.0,,
+Sally Face,ja,0.0,,
+Sally Face,ch,0.0,,
+Sally Face,it,0.0,,
+Sally Face,ot,0.0,,
+Old School RuneScape,en,5259.0,6452.0,
+Old School RuneScape,sp,1.0,3.0,
+Old School RuneScape,pt,3.0,12.0,
+Old School RuneScape,de,0.0,0.0,
+Old School RuneScape,ru,1.0,51.0,
+Old School RuneScape,fr,0.0,0.0,
+Old School RuneScape,ko,0.0,0.0,
+Old School RuneScape,ja,0.0,0.0,
+Old School RuneScape,ch,0.0,0.0,
+Old School RuneScape,it,0.0,0.0,
+Old School RuneScape,ot,152.0,65.0,
+Honkai: Star Rail,en,3376.0,,
+Honkai: Star Rail,sp,196.0,,
+Honkai: Star Rail,pt,186.0,,
+Honkai: Star Rail,de,125.0,,
+Honkai: Star Rail,ru,91.0,,
+Honkai: Star Rail,fr,18.0,,
+Honkai: Star Rail,ko,928.0,,
+Honkai: Star Rail,ja,80.0,,
+Honkai: Star Rail,ch,106.0,,
+Honkai: Star Rail,it,91.0,,
+Honkai: Star Rail,ot,10.0,,
+Choo-Choo Charles,en,73.0,,
+Choo-Choo Charles,sp,0.0,,
+Choo-Choo Charles,pt,0.0,,
+Choo-Choo Charles,de,0.0,,
+Choo-Choo Charles,ru,0.0,,
+Choo-Choo Charles,fr,0.0,,
+Choo-Choo Charles,ko,5065.0,,
+Choo-Choo Charles,ja,0.0,,
+Choo-Choo Charles,ch,0.0,,
+Choo-Choo Charles,it,0.0,,
+Choo-Choo Charles,ot,0.0,,
+Call of Duty: Modern Warfare II,en,3031.0,4733.0,8262.0
+Call of Duty: Modern Warfare II,sp,71.0,287.0,344.0
+Call of Duty: Modern Warfare II,pt,126.0,159.0,236.0
+Call of Duty: Modern Warfare II,de,559.0,398.0,1301.0
+Call of Duty: Modern Warfare II,ru,19.0,51.0,46.0
+Call of Duty: Modern Warfare II,fr,336.0,224.0,340.0
+Call of Duty: Modern Warfare II,ko,23.0,5.0,2.0
+Call of Duty: Modern Warfare II,ja,93.0,28.0,7.0
+Call of Duty: Modern Warfare II,ch,1.0,13.0,2.0
+Call of Duty: Modern Warfare II,it,80.0,101.0,144.0
+Call of Duty: Modern Warfare II,ot,316.0,475.0,440.0
+StarCraft II,en,3189.0,,
+StarCraft II,sp,39.0,,
+StarCraft II,pt,0.0,,
+StarCraft II,de,1.0,,
+StarCraft II,ru,164.0,,
+StarCraft II,fr,266.0,,
+StarCraft II,ko,829.0,,
+StarCraft II,ja,0.0,,
+StarCraft II,ch,8.0,,
+StarCraft II,it,1.0,,
+StarCraft II,ot,351.0,,
+Tom Clancy's Rainbow Six Siege,en,2664.0,3726.0,5202.0
+Tom Clancy's Rainbow Six Siege,sp,13.0,243.0,469.0
+Tom Clancy's Rainbow Six Siege,pt,75.0,538.0,449.0
+Tom Clancy's Rainbow Six Siege,de,403.0,239.0,475.0
+Tom Clancy's Rainbow Six Siege,ru,48.0,260.0,222.0
+Tom Clancy's Rainbow Six Siege,fr,631.0,509.0,562.0
+Tom Clancy's Rainbow Six Siege,ko,201.0,234.0,67.0
+Tom Clancy's Rainbow Six Siege,ja,71.0,164.0,35.0
+Tom Clancy's Rainbow Six Siege,ch,88.0,62.0,26.0
+Tom Clancy's Rainbow Six Siege,it,148.0,125.0,231.0
+Tom Clancy's Rainbow Six Siege,ot,186.0,371.0,428.0
+Destiny 2,en,3266.0,12818.0,12455.0
+Destiny 2,sp,12.0,269.0,156.0
+Destiny 2,pt,232.0,162.0,156.0
+Destiny 2,de,149.0,431.0,557.0
+Destiny 2,ru,70.0,140.0,187.0
+Destiny 2,fr,127.0,76.0,183.0
+Destiny 2,ko,85.0,57.0,25.0
+Destiny 2,ja,70.0,108.0,27.0
+Destiny 2,ch,37.0,29.0,0.0
+Destiny 2,it,3.0,184.0,96.0
+Destiny 2,ot,22.0,44.0,23.0
+Mr. Gimmick,en,60.0,,
+Mr. Gimmick,sp,0.0,,
+Mr. Gimmick,pt,0.0,,
+Mr. Gimmick,de,0.0,,
+Mr. Gimmick,ru,0.0,,
+Mr. Gimmick,fr,0.0,,
+Mr. Gimmick,ko,4006.0,,
+Mr. Gimmick,ja,0.0,,
+Mr. Gimmick,ch,0.0,,
+Mr. Gimmick,it,0.0,,
+Mr. Gimmick,ot,0.0,,
+Wo Long: Fallen Dynasty,en,10.0,,
+Wo Long: Fallen Dynasty,sp,0.0,,
+Wo Long: Fallen Dynasty,pt,0.0,,
+Wo Long: Fallen Dynasty,de,5.0,,
+Wo Long: Fallen Dynasty,ru,3.0,,
+Wo Long: Fallen Dynasty,fr,1.0,,
+Wo Long: Fallen Dynasty,ko,12.0,,
+Wo Long: Fallen Dynasty,ja,5.0,,
+Wo Long: Fallen Dynasty,ch,3989.0,,
+Wo Long: Fallen Dynasty,it,0.0,,
+Wo Long: Fallen Dynasty,ot,0.0,,
+7 Days to Die,en,2132.0,,
+7 Days to Die,sp,72.0,,
+7 Days to Die,pt,12.0,,
+7 Days to Die,de,551.0,,
+7 Days to Die,ru,130.0,,
+7 Days to Die,fr,201.0,,
+7 Days to Die,ko,96.0,,
+7 Days to Die,ja,478.0,,
+7 Days to Die,ch,15.0,,
+7 Days to Die,it,2.0,,
+7 Days to Die,ot,47.0,,
+Hunt: Showdown,en,2231.0,2755.0,3512.0
+Hunt: Showdown,sp,21.0,57.0,94.0
+Hunt: Showdown,pt,16.0,54.0,103.0
+Hunt: Showdown,de,653.0,1456.0,1763.0
+Hunt: Showdown,ru,447.0,667.0,5539.0
+Hunt: Showdown,fr,219.0,118.0,144.0
+Hunt: Showdown,ko,11.0,4.0,3.0
+Hunt: Showdown,ja,20.0,14.0,1.0
+Hunt: Showdown,ch,5.0,3.0,0.0
+Hunt: Showdown,it,6.0,22.0,20.0
+Hunt: Showdown,ot,352.0,754.0,1035.0
+Baldur's Gate 3,en,,35050.0,
+Baldur's Gate 3,sp,,4348.0,
+Baldur's Gate 3,pt,,5.0,
+Baldur's Gate 3,de,,13.0,
+Baldur's Gate 3,ru,,56.0,
+Baldur's Gate 3,fr,,977.0,
+Baldur's Gate 3,ko,,36.0,
+Baldur's Gate 3,ja,,0.0,
+Baldur's Gate 3,ch,,1.0,
+Baldur's Gate 3,it,,15.0,
+Baldur's Gate 3,ot,,202.0,
+Sekiro: Shadows Die Twice,en,,10454.0,10522.0
+Sekiro: Shadows Die Twice,sp,,40.0,228.0
+Sekiro: Shadows Die Twice,pt,,70.0,82.0
+Sekiro: Shadows Die Twice,de,,108.0,118.0
+Sekiro: Shadows Die Twice,ru,,488.0,446.0
+Sekiro: Shadows Die Twice,fr,,4.0,3.0
+Sekiro: Shadows Die Twice,ko,,10.0,5.0
+Sekiro: Shadows Die Twice,ja,,56.0,77.0
+Sekiro: Shadows Die Twice,ch,,27.0,6.0
+Sekiro: Shadows Die Twice,it,,13.0,3.0
+Sekiro: Shadows Die Twice,ot,,13.0,610.0
+Until Dawn,en,,9140.0,9538.0
+Until Dawn,sp,,0.0,3.0
+Until Dawn,pt,,0.0,0.0
+Until Dawn,de,,5.0,2.0
+Until Dawn,ru,,0.0,0.0
+Until Dawn,fr,,0.0,228.0
+Until Dawn,ko,,0.0,0.0
+Until Dawn,ja,,0.0,0.0
+Until Dawn,ch,,0.0,0.0
+Until Dawn,it,,0.0,0.0
+Until Dawn,ot,,0.0,37.0
+Everybody 1-2-Switch,en,,0.0,
+Everybody 1-2-Switch,sp,,0.0,
+Everybody 1-2-Switch,pt,,0.0,
+Everybody 1-2-Switch,de,,0.0,
+Everybody 1-2-Switch,ru,,0.0,
+Everybody 1-2-Switch,fr,,0.0,
+Everybody 1-2-Switch,ko,,0.0,
+Everybody 1-2-Switch,ja,,0.0,
+Everybody 1-2-Switch,ch,,8399.0,
+Everybody 1-2-Switch,it,,0.0,
+Everybody 1-2-Switch,ot,,0.0,
+Super Mario World,en,,6399.0,
+Super Mario World,sp,,0.0,
+Super Mario World,pt,,0.0,
+Super Mario World,de,,108.0,
+Super Mario World,ru,,0.0,
+Super Mario World,fr,,0.0,
+Super Mario World,ko,,0.0,
+Super Mario World,ja,,65.0,
+Super Mario World,ch,,0.0,
+Super Mario World,it,,0.0,
+Super Mario World,ot,,0.0,
+Super Mario 64,en,,5144.0,
+Super Mario 64,sp,,7.0,
+Super Mario 64,pt,,0.0,
+Super Mario 64,de,,8.0,
+Super Mario 64,ru,,0.0,
+Super Mario 64,fr,,621.0,
+Super Mario 64,ko,,0.0,
+Super Mario 64,ja,,183.0,
+Super Mario 64,ch,,0.0,
+Super Mario 64,it,,0.0,
+Super Mario 64,ot,,0.0,
+Yu-Gi-Oh! Master Duel,en,,4897.0,
+Yu-Gi-Oh! Master Duel,sp,,15.0,
+Yu-Gi-Oh! Master Duel,pt,,96.0,
+Yu-Gi-Oh! Master Duel,de,,37.0,
+Yu-Gi-Oh! Master Duel,ru,,0.0,
+Yu-Gi-Oh! Master Duel,fr,,71.0,
+Yu-Gi-Oh! Master Duel,ko,,1016.0,
+Yu-Gi-Oh! Master Duel,ja,,9.0,
+Yu-Gi-Oh! Master Duel,ch,,12.0,
+Yu-Gi-Oh! Master Duel,it,,2.0,
+Yu-Gi-Oh! Master Duel,ot,,0.0,
+Trackmania,en,,6241.0,6318.0
+Trackmania,sp,,4.0,8.0
+Trackmania,pt,,5.0,1.0
+Trackmania,de,,488.0,4.0
+Trackmania,ru,,11.0,12.0
+Trackmania,fr,,235.0,1240.0
+Trackmania,ko,,0.0,0.0
+Trackmania,ja,,0.0,0.0
+Trackmania,ch,,0.0,0.0
+Trackmania,it,,11.0,4.0
+Trackmania,ot,,14.0,51.0
+PowerWash Simulator,en,,4984.0,
+PowerWash Simulator,sp,,7.0,
+PowerWash Simulator,pt,,0.0,
+PowerWash Simulator,de,,16.0,
+PowerWash Simulator,ru,,169.0,
+PowerWash Simulator,fr,,17.0,
+PowerWash Simulator,ko,,83.0,
+PowerWash Simulator,ja,,3.0,
+PowerWash Simulator,ch,,0.0,
+PowerWash Simulator,it,,0.0,
+PowerWash Simulator,ot,,3.0,
+Journey to the West,en,,0.0,
+Journey to the West,sp,,0.0,
+Journey to the West,pt,,0.0,
+Journey to the West,de,,0.0,
+Journey to the West,ru,,0.0,
+Journey to the West,fr,,0.0,
+Journey to the West,ko,,0.0,
+Journey to the West,ja,,0.0,
+Journey to the West,ch,,5317.0,
+Journey to the West,it,,0.0,
+Journey to the West,ot,,0.0,
+The Elder Scrolls Online,en,,,2962.0
+The Elder Scrolls Online,sp,,,23.0
+The Elder Scrolls Online,pt,,,8.0
+The Elder Scrolls Online,de,,,19620.0
+The Elder Scrolls Online,ru,,,154.0
+The Elder Scrolls Online,fr,,,50.0
+The Elder Scrolls Online,ko,,,1.0
+The Elder Scrolls Online,ja,,,0.0
+The Elder Scrolls Online,ch,,,0.0
+The Elder Scrolls Online,it,,,0.0
+The Elder Scrolls Online,ot,,,52.0
+Warhammer Age of Sigmar: Realms of Ruin,en,,,17173.0
+Warhammer Age of Sigmar: Realms of Ruin,sp,,,1585.0
+Warhammer Age of Sigmar: Realms of Ruin,pt,,,0.0
+Warhammer Age of Sigmar: Realms of Ruin,de,,,22.0
+Warhammer Age of Sigmar: Realms of Ruin,ru,,,9.0
+Warhammer Age of Sigmar: Realms of Ruin,fr,,,29.0
+Warhammer Age of Sigmar: Realms of Ruin,ko,,,0.0
+Warhammer Age of Sigmar: Realms of Ruin,ja,,,0.0
+Warhammer Age of Sigmar: Realms of Ruin,ch,,,0.0
+Warhammer Age of Sigmar: Realms of Ruin,it,,,7.0
+Warhammer Age of Sigmar: Realms of Ruin,ot,,,44.0
+MLB The Show 23,en,,,8589.0
+MLB The Show 23,sp,,,2.0
+MLB The Show 23,pt,,,0.0
+MLB The Show 23,de,,,11.0
+MLB The Show 23,ru,,,1.0
+MLB The Show 23,fr,,,2.0
+MLB The Show 23,ko,,,12.0
+MLB The Show 23,ja,,,1.0
+MLB The Show 23,ch,,,0.0
+MLB The Show 23,it,,,0.0
+MLB The Show 23,ot,,,0.0
+Six Days in Fallujah,en,,,33.0
+Six Days in Fallujah,sp,,,0.0
+Six Days in Fallujah,pt,,,0.0
+Six Days in Fallujah,de,,,48.0
+Six Days in Fallujah,ru,,,0.0
+Six Days in Fallujah,fr,,,8.0
+Six Days in Fallujah,ko,,,0.0
+Six Days in Fallujah,ja,,,0.0
+Six Days in Fallujah,ch,,,0.0
+Six Days in Fallujah,it,,,0.0
+Six Days in Fallujah,ot,,,11830.0
+Star Citizen,en,,,892.0
+Star Citizen,sp,,,234.0
+Star Citizen,pt,,,8682.0
+Star Citizen,de,,,2146.0
+Star Citizen,ru,,,36.0
+Star Citizen,fr,,,293.0
+Star Citizen,ko,,,0.0
+Star Citizen,ja,,,0.0
+Star Citizen,ch,,,0.0
+Star Citizen,it,,,0.0
+Star Citizen,ot,,,10.0
+Far Cry: Primal,en,,,18.0
+Far Cry: Primal,sp,,,11498.0
+Far Cry: Primal,pt,,,81.0
+Far Cry: Primal,de,,,5.0
+Far Cry: Primal,ru,,,1.0
+Far Cry: Primal,fr,,,0.0
+Far Cry: Primal,ko,,,0.0
+Far Cry: Primal,ja,,,0.0
+Far Cry: Primal,ch,,,0.0
+Far Cry: Primal,it,,,0.0
+Far Cry: Primal,ot,,,1.0
+Food & Drink,en,,,400.0
+Food & Drink,sp,,,211.0
+Food & Drink,pt,,,25.0
+Food & Drink,de,,,3042.0
+Food & Drink,ru,,,0.0
+Food & Drink,fr,,,14.0
+Food & Drink,ko,,,0.0
+Food & Drink,ja,,,0.0
+Food & Drink,ch,,,2246.0
+Food & Drink,it,,,31.0
+Food & Drink,ot,,,2367.0
+Jackbox Party Packs,en,,,8611.0
+Jackbox Party Packs,sp,,,0.0
+Jackbox Party Packs,pt,,,0.0
+Jackbox Party Packs,de,,,77.0
+Jackbox Party Packs,ru,,,320.0
+Jackbox Party Packs,fr,,,0.0
+Jackbox Party Packs,ko,,,0.0
+Jackbox Party Packs,ja,,,0.0
+Jackbox Party Packs,ch,,,0.0
+Jackbox Party Packs,it,,,0.0
+Jackbox Party Packs,ot,,,0.0
+The Legend of Zelda: Tears of the Kingdom,en,,,3410.0
+The Legend of Zelda: Tears of the Kingdom,sp,,,294.0
+The Legend of Zelda: Tears of the Kingdom,pt,,,66.0
+The Legend of Zelda: Tears of the Kingdom,de,,,2899.0
+The Legend of Zelda: Tears of the Kingdom,ru,,,20.0
+The Legend of Zelda: Tears of the Kingdom,fr,,,299.0
+The Legend of Zelda: Tears of the Kingdom,ko,,,89.0
+The Legend of Zelda: Tears of the Kingdom,ja,,,370.0
+The Legend of Zelda: Tears of the Kingdom,ch,,,46.0
+The Legend of Zelda: Tears of the Kingdom,it,,,29.0
+The Legend of Zelda: Tears of the Kingdom,ot,,,35.0
