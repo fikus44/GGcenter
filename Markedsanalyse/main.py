@@ -11,5 +11,6 @@ tester, tester_lang = dp.dataprocessing(dict = twitch_viewers, dict_language = t
 
 print("done getting fresh data")
 
+# Output
 
 # Hvad er steps herfra? Nu skal jeg automatisere scriptet således det bare kan køre uden mig og så skal jeg begynde at arbejde med data 
