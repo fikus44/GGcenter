@@ -139,7 +139,7 @@ def non_games(non_game_names):
 def top_games(params = {'first' : 100}):
 
     '''
-    top_games() returns two lists of the (default) 400 most popular 
+    top_games() returns two lists of the (default) 700 most popular 
     games as measured by number of viewers. The first list returns
     the name of the game while the second returns the game ID. 
 
@@ -162,9 +162,9 @@ def top_games(params = {'first' : 100}):
     game_name = [game["name"] for game in games_response_json["data"]]
     game_id = [game["id"] for game in games_response_json["data"]]
 
-    # Get request for the following 3 pages 
+    # Get request for the following 6 pages 
     count = 0
-    while bool(games_response_json["pagination"]) and count < 3:
+    while bool(games_response_json["pagination"]) and count < 6:
         new_params = {'first' : 100, 'after' : games_response_json["pagination"]["cursor"]}
         games_response = requests.get(url = top_games_url, params = new_params, headers = get_headers())
         games_response_json = games_response.json()
@@ -199,7 +199,6 @@ def top_games(params = {'first' : 100}):
         if name in game_name:
             game_name.remove(name)
             game_id.remove(id)
-
 
     return game_name, game_id
 
@@ -353,11 +352,13 @@ def loop_through_pages(params, game_id):
     stream_response = get_streams(params)
     result.extend(stream_response["data"])
 
+
     # While there are new pages we keep requesting them and adding them to the holder
     while bool(stream_response["pagination"]): # Dict evaluates to True as long as there is another page 
         new_params = update_params(stream_response, game_id)
         stream_response = get_streams(new_params)
-        result.extend(stream_response["data"])        
+        result.extend(stream_response["data"]) 
+              
 
     return result
 
@@ -400,6 +401,23 @@ def viewers_per_game(params, game_id):
     # Loop through pages pertaining to the specifc game and sum viewers
     stream_response = loop_through_pages(params, game_id)
     viewers_per_game = [game["viewer_count"] for game in stream_response]
+
+    # Filter our big streamers if they have at least 1.000 viewers and
+    # one of the following three 1) more than 70% of all viewers for 
+    # the specific game, 2) more than 10 times as many viewers as the
+    # second largest streamer or 3) the three biggest streamers 
+    # account for more than 95% of all viewers (multiple big streamers)
+    big = True
+    if len(viewers_per_game) >= 3:
+        while big == True:
+            if viewers_per_game[0] >= 250 and len(viewers_per_game) >= 3 and (viewers_per_game[0] >= 0.7 * sum(viewers_per_game) or 
+                                    viewers_per_game[0] > 10 * viewers_per_game[1] or sum(viewers_per_game[:3]) >= 0.95 * sum(viewers_per_game)):
+                stream_response.pop(0)
+            big = False
+
+    # Recreate viewers per game post filtering 
+    viewers_per_game = [game["viewer_count"] for game in stream_response]
+
 
     # 10 most popular languages on twitch
     top10_lang = ["en", "es", "ko", "fr", "zh", "ru", "de", "it", "pt", "ja"]
