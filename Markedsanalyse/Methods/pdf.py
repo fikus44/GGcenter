@@ -13,12 +13,12 @@ class PDF(FPDF):
         self.cell(30, 10, "Title", border = False, ln =1, align = "C")
         self.ln(20)
     '''
-
+    
     def footer(self):
         self.set_y(-15)
         self.set_font(family = "Computer Modern", size = 8)
         self.cell(0, 10, f'{self.page_no()}', align = "C")
-
+    
 # create PDF object
 pdf = PDF("P", "mm", "A4")
 
@@ -29,14 +29,15 @@ pdf.add_page()
 pdf.set_auto_page_break(auto = True, margin = 20)
 
 # add and set the font
-pdf.add_font(family= "Computer Modern", fname = "C:\\Users\\thoma\\miniconda3\\Lib\\site-packages\\fpdf\\fonts\\cmunrm.ttf")
+font_path = "C:\\Users\\thoma\\miniconda3\\Lib\\site-packages\\fpdf\\fonts\\cmunrm.ttf"
+pdf.add_font(family= "Computer Modern", fname = font_path)
 pdf.set_font(family= "Computer Modern", size = 20)
 
 # set margins (left, top, right)
 pdf.set_margins(50, 20, 50)
 
 # add title
-pdf.cell(0, 4, "TITEL", align = "C")
+pdf.cell(0, 4, "Daglig Rapport", align = "C")
 pdf.ln(15)
 
 # set font after title
@@ -117,6 +118,36 @@ the most informative features in a data-driven way. My approach caters\
 to potential hardware limitations, reducing the computational intensive\
 estimation as well as the demands on memory while still using the vast\
 amount of economic information available.")
+pdf.ln(10)
 
+TABLE_DATA = (
+    ("First name", "Last name", "Age", "City"),
+    ("Jules", "Smith", "34", "San Juan"),
+    ("Mary", "Ramos", "45", "Orlando"),
+    ("Carlson", "Banks", "19", "Los Angeles"),
+    ("Lucas", "Cimon", "31", "Saint-Mahturin-sur-Loire"),
+)
+#pdf.set_font("Times", size=8)
+pdf.set_margins(30, 20, 30)
+with pdf.table(borders_layout="SINGLE_TOP_LINE", first_row_as_headings = False) as table:
+    for data_row in TABLE_DATA:
+        row = table.row()
+        for datum in data_row:
+            row.cell(datum)
+
+
+pdf.set_margins(50, 20, 50)
+pdf.ln(10)
+pdf.multi_cell(0, 4, "I conduct a comparative analysis of supervised machine learning methods\
+to tackle perhaps the most fundamental question in asset pricing; estimating\
+equity risk premiums. At the highest level, I demonstrate the\
+potential of machine learning in asset pricing by showcasing large economic\
+gains to investors using U.S. Equities from 1957 - 2016 as a proving\
+ground. My key innovation is to project the high-dimensional input space\
+to a lower, truncated dimensional space while simultaneously constructing\
+the most informative features in a data-driven way. My approach caters\
+to potential hardware limitations, reducing the computational intensive\
+estimation as well as the demands on memory while still using the vast\
+amount of economic information available.") 
 pdf.output("pdf_1.pdf")
 

@@ -78,3 +78,5 @@ def table(data):
 # 5) Tabel med spil ad y-akse og sprog ad x-akse hvor de er sorteret i descending order efter engelske viewers. En tabel med daily, en med weekly, 2 weeks, 1 month 3 months etc. 
 
 # Jeg forestiller mig output er en PDF med relevante figurer og tabeller. PDF'en genereres hver dag. 
+
+# To features ved tabeller som skal med; std. dev. og coverage, i.e. hvor mange observationer vi har som procent af samtlige obs. 

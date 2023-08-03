@@ -45,16 +45,17 @@ def generate_access_token():
                  "client_secret": client_secret,
                  "grant_type": "client_credentials"
                  }
-
+    
     auth_response = requests.post(
         url="https://id.twitch.tv/oauth2/token", json=auth_body)
 
     # Set up headers for future requests
     auth_response_json = auth_response.json()
+    
 
     # Set Environment Variables and return token
     os.environ["TWITCH_ACCESS_TOKEN"] = auth_response_json['access_token']
-    return os.environ.get("TWTICH_ACCESS_TOKEN")
+    return os.environ.get("TWITCH_ACCESS_TOKEN")
 
 def get_headers():
 
@@ -90,20 +91,124 @@ def validate_access_token(access_token):
     validate_header = {"Authorization": f"OAuth {access_token}"
                     }
     
+    validate_response = requests.get(url=validate_url, headers=validate_header)
+    validate_response_json = validate_response.json()
+
+    
     try:
         validate_response = requests.get(url=validate_url, headers=validate_header)
         validate_response_json = validate_response.json()
         return validate_response.status_code == requests.codes.ok and validate_response_json['client_id'] == client_id # Succesful response => .status_code = 200. requests.codes.ok == 200
     except:
+        
         return False
     
+    
 
+def non_games(non_game_names):
+
+    '''
+    non_games returns a dictionary of the name and ID
+    of non-games such that I can remove them from 
+    the get top_ggames request.
+
+    Parameters
+    ----------
+    non_game_names : List 
+        List of non-game names (strings)
+    
+    '''
+    
+    # Get top games name and id
+    game_name, id = top_games()
+
+    # Initiate empty list for ID of non-games
+    id_non_games = []
+    for name in non_game_names:
+        id_non_game = id[game_name.index(name)]
+        id_non_games.append(id_non_game)
+
+    # Lists to dictionary
+    dict = {}
+    for name, id in zip(non_game_names, id_non_games):
+        dict[name] = id
+    
+    return dict
+
+    
 def top_games(params = {'first' : 100}):
+
+    '''
+    top_games() returns two lists of the (default) 400 most popular 
+    games as measured by number of viewers. The first list returns
+    the name of the game while the second returns the game ID. 
+
+    Parameters
+    ----------
+    params : Dictionary
+        Specified paramters for the get HTTP request.
+        Only the first parameter (# of hits per page)
+        is required. I set it to 100 which is the max
+        per page
+    
+    '''
+
+    # Get request and parse from json to dictionary
+    games_response = requests.get(url = top_games_url, params = params, headers = get_headers())
+    games_response_json = games_response.json()
+    
+
+    # Lists of name and ID of games 
+    game_name = [game["name"] for game in games_response_json["data"]]
+    game_id = [game["id"] for game in games_response_json["data"]]
+
+    # Get request for the following 3 pages 
+    count = 0
+    while bool(games_response_json["pagination"]) and count < 3:
+        new_params = {'first' : 100, 'after' : games_response_json["pagination"]["cursor"]}
+        games_response = requests.get(url = top_games_url, params = new_params, headers = get_headers())
+        games_response_json = games_response.json()
+
+        game_name_temp = [game["name"] for game in games_response_json["data"]]
+        game_id_temp = [game["id"] for game in games_response_json["data"]]
+
+        game_name.extend(game_name_temp)
+        game_id.extend(game_id_temp)
+
+        count += 1
+
+    # Use the line below to get a list of game name and ID to filter out non-games
+    # Make sure to return it in the bottom of the function
+    # games = [(game["name"], game["id"]) for game in games_response_json["data"]]
+
+    # Non-games to drop
+    non_games_name = ["Just Chatting", "Sports", "Casino Slot Machine", "Talk Shows & Podcasts",
+                      "Travel & Outdoors", "Music", "Art", "Slots", "ASMR", "Magic: The Gathering", 
+                      "Chess", "Virtual Casino", "Poker", "Retro", "Politics", "I'm Only Sleeping",
+                      "Crypto", "Software and Game Development", "Pools, Hot Tubs, and Beaches",
+                      "Board Games", "Dating Simulator", "Games + Demos", "VRChat", "PowerWash Simulator",
+                      "Marbles on Stream", "Dungeons & Dragons", "Animals, Aquariums, and Zoos", "UNO",
+                      "Special Events", 'Food & Drink']
+    non_games_id = ["509658", "518203", "1767487238", "417752", "509672", "26936", "509660", "498566", 
+                    "509659", "2748", "743", "29452", "488190", "27284", "515214", "498592", "499634",
+                    "1469308723", "116747788", "490413", "203542608", "66082", "499003",
+                    "519103", "509511", "509577", "272263131", "11103", "509663", '509667']
+
+    # Drop non-games 
+    for name, id in zip(non_games_name, non_games_id):
+        if name in game_name:
+            game_name.remove(name)
+            game_id.remove(id)
+
+
+    return game_name, game_id
+
+def top_games_old(params = {'first' : 100}):
 
     '''
     top_games() returns two lists of the (default) 50 most popular 
     games as measured by number of viewers. The first list returns
-    the name of the game wilst the second returns the game ID. 
+    the name of the game while the second returns the game ID. 
 
     Parameters
     ----------
@@ -118,6 +223,7 @@ def top_games(params = {'first' : 100}):
     # Get request and parse from json to dictionary
     games_response = requests.get(url = top_games_url, params = params, headers = get_headers())
     games_response_json = games_response.json()
+    
 
     # Lists of name and ID of games 
     game_name = [game["name"] for game in games_response_json["data"]]
