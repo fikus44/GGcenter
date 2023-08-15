@@ -1,6 +1,7 @@
 import os
 import requests
 import datetime
+import time 
 
 '''
 Twitch.py encloses all methods to extract data from
@@ -91,16 +92,11 @@ def validate_access_token(access_token):
     validate_header = {"Authorization": f"OAuth {access_token}"
                     }
     
-    validate_response = requests.get(url=validate_url, headers=validate_header)
-    validate_response_json = validate_response.json()
-
-    
     try:
         validate_response = requests.get(url=validate_url, headers=validate_header)
         validate_response_json = validate_response.json()
         return validate_response.status_code == requests.codes.ok and validate_response_json['client_id'] == client_id # Succesful response => .status_code = 200. requests.codes.ok == 200
     except:
-        
         return False
     
     
@@ -188,11 +184,13 @@ def top_games(params = {'first' : 100}):
                       "Crypto", "Software and Game Development", "Pools, Hot Tubs, and Beaches",
                       "Board Games", "Dating Simulator", "Games + Demos", "VRChat", "PowerWash Simulator",
                       "Marbles on Stream", "Dungeons & Dragons", "Animals, Aquariums, and Zoos", "UNO",
-                      "Special Events", 'Food & Drink']
+                      "Special Events", 'Food & Drink', 'Watch Parties', 'Always On', 'Live', 'Twitch Plays',
+                      'The Casino: Roulette, Video Poker, Slot Machines, Craps, Baccarat', 'Casino Jackpot']
     non_games_id = ["509658", "518203", "1767487238", "417752", "509672", "26936", "509660", "498566", 
                     "509659", "2748", "743", "29452", "488190", "27284", "515214", "498592", "499634",
                     "1469308723", "116747788", "490413", "203542608", "66082", "499003",
-                    "519103", "509511", "509577", "272263131", "11103", "509663", '509667']
+                    "519103", "509511", "509577", "272263131", "11103", "509663", '509667', '515467', '499973',
+                    '508402', '491180', '1967463137', '599619814']
 
     # Drop non-games 
     for name, id in zip(non_games_name, non_games_id):
@@ -282,7 +280,12 @@ def get_streams(params = {'first' : 100}):
     '''
 
     # Get HTTP request to get streams and parse from json to dictionary
+    time.sleep(0.01)
     streams_response = requests.get(url = top_streams_url, params = params, headers = get_headers())
+    while streams_response.status_code != requests.codes.ok:
+        print("Fejl i get request. Fik response:" f'{streams_response}. Vi prøver igen')
+        streams_response = requests.get(url = top_streams_url, params = params, headers = get_headers())
+
     streams_response_json = streams_response.json()
 
     return streams_response_json
@@ -350,14 +353,20 @@ def loop_through_pages(params, game_id):
     # Initialize holder as well as first page of stream response bodies
     result = []
     stream_response = get_streams(params)
-    result.extend(stream_response["data"])
+    try:
+        result.extend(stream_response["data"])
+    except: 
+        print(stream_response)
 
 
     # While there are new pages we keep requesting them and adding them to the holder
     while bool(stream_response["pagination"]): # Dict evaluates to True as long as there is another page 
         new_params = update_params(stream_response, game_id)
         stream_response = get_streams(new_params)
-        result.extend(stream_response["data"]) 
+        try:
+            result.extend(stream_response["data"]) 
+        except:
+            print(stream_response)
               
 
     return result
